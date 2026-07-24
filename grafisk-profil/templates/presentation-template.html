@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+  MALL för teoripass-presentationer, IK Göta.
+
+  Så här använder du mallen för en ny presentation:
+  1. Kopiera denna fil till teoripass/<ditt-pass>/presentation/index.html
+  2. Byt ut <title> och allt innehåll i <section class="slide">-blocken
+  3. Länkarna till presentation.css / presentation.js / logga.png nedan
+     är skrivna för sökvägen teoripass/<mapp>/presentation/index.html
+     (tre nivåer upp till projektroten). Ändra "../../../" om din fil
+     hamnar på annat djup.
+  4. Håll varje bild kort: en rubrik + max 2-3 rader eller punkter.
+     Målgrupp: 10-åringar som spelar hockey – enkelt språk, gärna emoji.
+  5. Första bilden bör vara en röd "omslagsbild" (class="slide slide-red"),
+     sista bilden gärna också röd som avslutning.
+-->
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Titel på passet – IK Göta</title>
+  <link rel="stylesheet" href="../../../grafisk-profil/templates/presentation.css" />
+  <link rel="icon" href="../../../grafisk-profil/logga.png" />
+</head>
+<body>
+  <div class="deck">
+    <img class="logo-corner" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+
+    <!-- Bild 1: Omslag (röd) -->
+    <section class="slide slide-red active">
+      <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+      <div class="eyebrow">IK Göta</div>
+      <h1>Titel på passet</h1>
+      <p class="lead">Kort undertext som säger vad passet handlar om</p>
+    </section>
+
+    <!-- Bild 2: Exempel med rubrik + kort text -->
+    <section class="slide">
+      <div class="eyebrow">Fundera på det här</div>
+      <h2>En kort fråga eller rubrik</h2>
+      <p class="lead">Max en till två meningar. Enkelt språk!</p>
+    </section>
+
+    <!-- Bild 3: Exempel med tre korten (card-grid) -->
+    <section class="slide">
+      <h2>Tre saker att komma ihåg</h2>
+      <div class="card-grid">
+        <div class="card"><span class="icon">💪</span><span class="label">Första saken</span></div>
+        <div class="card"><span class="icon">🤝</span><span class="label">Andra saken</span></div>
+        <div class="card"><span class="icon">❤️</span><span class="label">Tredje saken</span></div>
+      </div>
+    </section>
+
+    <!-- Bild 4: Exempel med numrerade steg -->
+    <section class="slide">
+      <h2>Så här gör vi</h2>
+      <ul class="steps">
+        <li><span class="num">1</span> Första steget</li>
+        <li><span class="num">2</span> Andra steget</li>
+        <li><span class="num">3</span> Tredje steget</li>
+      </ul>
+    </section>
+
+    <!-- Sista bilden: Avslutning (röd) -->
+    <section class="slide slide-red">
+      <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+      <h1>Nu kör vi!</h1>
+    </section>
+
+    <div class="nav-controls">
+      <button class="nav-btn nav-prev" aria-label="Föregående">‹</button>
+      <div class="dots"></div>
+      <button class="nav-btn nav-next" aria-label="Nästa">›</button>
+    </div>
+    <div class="slide-counter"></div>
+  </div>
+  <script src="../../../grafisk-profil/templates/presentation.js"></script>
+</body>
+</html>

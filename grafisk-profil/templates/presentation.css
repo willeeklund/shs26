@@ -1,0 +1,291 @@
+/*
+  IK Göta – delad mall för teoripass-presentationer.
+  Används av alla presentation/index.html i teoripass/*.
+  Ändra INTE denna fil per presentation – lägg presentationsspecifik
+  styling i en <style> i respektive index.html om det behövs.
+*/
+
+:root {
+  --ik-red: #AF2924;
+  --ik-red-dark: #7c1d19;
+  --ik-white: #ffffff;
+  --ik-text: #221615;
+  --ik-text-soft: #5a4443;
+  --ik-gold: #b8963f;
+  --slide-transition: 420ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--ik-white);
+  font-family: "Segoe UI", Verdana, Arial, sans-serif;
+  color: var(--ik-text);
+  overflow: hidden;
+}
+
+.deck {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* --- Slides --- */
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6vh 8vw;
+  opacity: 0;
+  transform: translateX(40px);
+  pointer-events: none;
+  transition: opacity var(--slide-transition) ease, transform var(--slide-transition) ease;
+  background: var(--ik-white);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.slide.exit-left {
+  transform: translateX(-40px);
+}
+
+.slide h1 {
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  margin: 0 0 0.4em 0;
+  color: var(--ik-red);
+  line-height: 1.1;
+}
+
+.slide h2 {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  margin: 0 0 0.6em 0;
+  color: var(--ik-red);
+}
+
+.slide p.lead {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  max-width: 22ch;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+.slide .eyebrow {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ik-text-soft);
+  margin-bottom: 0.8em;
+}
+
+/* --- Cover / red full-bleed slides --- */
+
+.slide-red {
+  background: var(--ik-red);
+  color: var(--ik-white);
+}
+
+.slide-red h1,
+.slide-red h2 {
+  color: var(--ik-white);
+}
+
+.slide-red .eyebrow {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.slide-red .logo-big {
+  width: min(30vw, 220px);
+  margin-bottom: 1.2em;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
+}
+
+/* --- Card grid for 3 short points --- */
+
+.card-grid {
+  display: flex;
+  gap: 4vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.card {
+  background: var(--ik-white);
+  border: 3px solid var(--ik-red);
+  border-radius: 18px;
+  padding: 1.6em 1.4em;
+  min-width: 200px;
+  max-width: 260px;
+  box-shadow: 0 4px 0 var(--ik-red);
+}
+
+.slide-red .card {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--ik-white);
+  box-shadow: none;
+}
+
+.card .icon {
+  font-size: 2.6rem;
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+.card .label {
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+  font-weight: 600;
+}
+
+/* --- Numbered steps --- */
+
+.steps {
+  list-style: none;
+  margin: 0.6em 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  text-align: left;
+  max-width: 46ch;
+}
+
+.steps li {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  font-size: clamp(1.2rem, 2.6vw, 1.7rem);
+}
+
+.steps .num {
+  flex: none;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  background: var(--ik-red);
+  color: var(--ik-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* --- Logo corner (present on every slide) --- */
+
+.logo-corner {
+  position: fixed;
+  top: 22px;
+  right: 26px;
+  width: 64px;
+  height: auto;
+  z-index: 20;
+  opacity: 0.95;
+}
+
+/* --- Progress bar --- */
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: rgba(175, 41, 36, 0.15);
+  z-index: 20;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--ik-red);
+  transition: width var(--slide-transition) ease;
+}
+
+/* --- Nav controls --- */
+
+.nav-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  z-index: 20;
+}
+
+.nav-btn {
+  background: var(--ik-red);
+  color: var(--ik-white);
+  border: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: var(--ik-red-dark);
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(175, 41, 36, 0.25);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: var(--ik-red);
+}
+
+/* --- Slide counter --- */
+
+.slide-counter {
+  position: fixed;
+  bottom: 24px;
+  right: 26px;
+  font-size: 0.9rem;
+  color: var(--ik-text-soft);
+  z-index: 20;
+}
+
+@media (max-width: 700px) {
+  .logo-corner {
+    width: 44px;
+    top: 14px;
+    right: 14px;
+  }
+  .card-grid {
+    gap: 5vw;
+  }
+}
