@@ -1,9 +1,11 @@
 # Rita taktik
 
 ## Mål med passet
-Spelarna ska öva sig i att läsa enkla taktiska situationer och rita upp sina lösningar - var är den säkraste passningsvägen, hur rör vi oss tillsammans i anfall och försvar. Att rita tvingar dem att tänka ett steg i taget istället för att bara reagera på isen.
+Vi ska se vanliga situationer och rita upp sina lösningar - var är den säkraste passningsvägen, hur rör vi oss tillsammans i anfall och försvar.
 
-Cirkel = försvarare, Kryss = anfallare (håll symbolerna konsekventa genom hela passet).
+Rita var pucken och spelarna borde vara för att det ska bli så bra som möjligt - vid passningar, anfall och försvar.
+
+Cirkel = försvarare, Kryss = anfallare (samma hela passet, så alla hänger med).
 
 ## Material
 - Rink-mall (isyta ovanifrån) utskriven på papper, ett par per grupp + gärna en större på en whiteboard/blädderblock för genomgångar
@@ -12,31 +14,31 @@ Cirkel = försvarare, Kryss = anfallare (håll symbolerna konsekventa genom hela
 - Laminera gärna rink-mallarna så man kan rita med whiteboard-penna och sudda - då kan samma papper användas om och om igen
 
 ## Upplägg (ca 20-25 min), tre stationer
-Dela in laget i grupper om 4-5 spelare. Låt varje grupp rotera igenom stationerna, eller kör en station i taget för hela laget om tiden är knapp.
+Dela in laget i grupper om 4-5 kompisar. Varje grupp får testa alla tre stationerna.
 
-### Station 1: Säkraste passningen
-1. Visa en situation med kryss/cirklar utplacerade på planen.
-2. Varje spelare ritar först sin egen pil för vilken passningsväg de skulle välja.
-3. Jämför i gruppen - blev det olika svar? Varför valde ni olika vägar? Vilken väg är säkrast och varför?
+### Station 1: Bästa passningen
+1. Titta på bilden - var är dina lagkompisar och var är motståndarna?
+2. Rita en pil dit du skulle passa pucken.
+3. Jämför med de andra i gruppen. Valde ni samma väg? Varför/varför inte?
 
 ### Station 2: Anfall
-1. Visa en enkel anfallssituation, t ex 2 mot 1 eller 3 mot 2.
-2. Gruppen ritar tillsammans hur anfallarna borde röra sig för att skapa ett bra avslutsläge.
-3. Diskutera: vem har pucken, vem erbjuder sig till en passning, vem går mot mål?
+1. Titta på bilden - ni är fler än motståndarna (t ex 2 mot 1).
+2. Rita tillsammans var alla anfallare borde springa/åka för att få ett bra skottläge.
+3. Prata om: vem har pucken? Vem ropar efter en passning?
 
 ### Station 3: Försvar
-1. Visa samma typ av situation, men ur försvarets perspektiv.
-2. Gruppen ritar var försvararna borde stå och röra sig för att täcka det farligaste.
-3. Diskutera: vem tar pucken, vem täcker den öppna anfallaren?
+1. Samma bild, men nu är ni försvarare istället.
+2. Rita var försvararna borde stå för att stoppa anfallet.
+3. Prata om: vem tar pucken? Vem håller koll på den farligaste motståndaren?
 
-## Redovisning (frivillig)
-Efter stationerna: fråga om någon grupp vill visa upp en av sina ritningar för resten av laget och berätta hur de tänkte. Frivilligt så det inte blir prestation - men peppa gärna den som vågar.
+## Visa upp (frivilligt)
+Efter stationerna: vill någon grupp visa sin ritning för resten av laget och berätta hur de tänkte? Frivilligt - ingen måste, men peppa den som vågar!
 
 ## Hur gör vi det roligt?
-- Ge scenarierna roliga namn, precis som övningarna i ["Syftet med övningen"](../syftet-med-träningen/index.md)
-- Gör det till en liten tävling: vilken grupp hittar flest olika lösningar på samma situation? Inte om vem som har "rätt" svar, utan vem som är mest kreativ
-- Låt spelarna rita in sig själva med sina egna tröjnummer istället för anonyma kryss - känns roligare och mer på riktigt
-- Trappa upp svårigheten mellan situationerna (fler motståndare, snävare vinklar) så det känns som en utmaning som växer
+- Ge övningarna roliga namn, precis som i ["Syftet med övningen"](../syftet-med-träningen/index.md)
+- Gör det till en tävling: vilken grupp hittar flest olika bra lösningar? Inte vem som har "rätt", utan vem som är mest påhittig
+- Låt spelarna rita in sig själva med sitt eget tröjnummer istället för ett kryss - känns roligare och mer på riktigt
+- Börja enkelt, gör det lite svårare för varje runda (fler motståndare, trängre yta) - som att klara en bana i ett spel
 
 ## TODO
 [ ] Skriv ut/laminera rink-mallar, tillräckligt många för alla grupper och alla tre stationer
