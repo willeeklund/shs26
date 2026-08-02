@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<title>Spelförståelse - gruppkort</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .quadrant {
+    border: 1px dashed #bbb;
+    padding: 8mm 9mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header {
+    background: #AF2924;
+    color: white;
+    width: 100%;
+    border-radius: 4mm;
+    padding: 4mm 2mm;
+    margin-bottom: 4mm;
+  }
+  .emoji { font-size: 9mm; display: block; margin-bottom: 1mm; }
+  .title { font-size: 6mm; font-weight: 700; line-height: 1.15; display: block; }
+  .qr {
+    width: 40mm;
+    height: 40mm;
+    margin-bottom: 2mm;
+  }
+  .scan-hint {
+    font-size: 3.6mm;
+    color: #555;
+    margin-bottom: 4mm;
+  }
+  .questions {
+    text-align: left;
+    width: 100%;
+    padding-left: 5mm;
+    margin: 0;
+    font-size: 4.1mm;
+    line-height: 1.5;
+    color: #111;
+  }
+  .questions li { margin-bottom: 2.5mm; }
+</style>
+</head>
+<body>
+  <div class="page">
+    
+    <div class="quadrant">
+      <div class="header"><span class="emoji">🎭</span><span class="title">De 4 rollerna</span></div>
+      <img class="qr" src="roller.png" alt="QR-kod till filmen" />
+      <div class="scan-hint">📱 Skanna för att se filmen igen!</div>
+      <ol class="questions"><li>Vilken roll är godast att ha - och vilken är svårast?</li><li>Kom på ett eget exempel: när bytte du roll snabbt i en match?</li><li>Vad kan du ropa till en kompis som glömt sin roll?</li></ol>
+    </div>
+    
+    
+    <div class="quadrant">
+      <div class="header"><span class="emoji">🕶️</span><span class="title">Passningsskugga</span></div>
+      <img class="qr" src="skugga.png" alt="QR-kod till filmen" />
+      <div class="scan-hint">📱 Skanna för att se filmen igen!</div>
+      <ol class="questions"><li>Varför vill du INTE stå i skuggan mellan pucken och en försvarare?</li><li>Hur märker du att du står i skuggan just nu?</li><li>Vad gör du när du upptäcker att du hamnat där?</li></ol>
+    </div>
+    
+    
+    <div class="quadrant">
+      <div class="header"><span class="emoji">🤝</span><span class="title">Håll pucken inom laget</span></div>
+      <img class="qr" src="hall.png" alt="QR-kod till filmen" />
+      <div class="scan-hint">📱 Skanna för att se filmen igen!</div>
+      <ol class="questions"><li>Varför är en enkel säker passning ofta bättre än en svår?</li><li>Varför ska du inte hålla pucken en extra sekund om en kompis är fri?</li><li>Kom på ett eget tips för hur laget håller kvar pucken.</li></ol>
+    </div>
+    
+    
+    <div class="quadrant">
+      <div class="header"><span class="emoji">🔄</span><span class="title">Bli spelbar - give and go</span></div>
+      <img class="qr" src="givego.png" alt="QR-kod till filmen" />
+      <div class="scan-hint">📱 Skanna för att se filmen igen!</div>
+      <ol class="questions"><li>Varför räcker det inte att bara stå still och ropa på pucken?</li><li>Vad gör du direkt efter att du passat pucken vidare?</li><li>Vad händer om alla i laget står stilla samtidigt?</li></ol>
+    </div>
+    
+  </div>
+</body>
+</html>

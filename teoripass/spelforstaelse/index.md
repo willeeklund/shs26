@@ -95,6 +95,5 @@ Berätta för laget: "Idag ska ni bli experter på en av de fyra delarna av spel
 **Kom på:** Ett eget häftigt namn på rörelsen ni ritat, precis som "give and go" redan har ett namn.
 
 ## TODO
-- [ ] Skapa QR kod för att komma till mappen med filmerna från deras telefoner.
-- [ ] Skriv ut/förbered uppdragskorten (en uppsättning frågor per grupp räcker, behöver inte vara på papper till varje spelare)
-- [ ] Förbered en kort koppling till en isövning per koncept, så teorin känns direkt användbar på isen
+- [✅] Skapa QR koder för att komma till mappen med filmerna från deras telefoner. `Uppdragskort.pdf` finns förberett för detta.
+- [ ] Skriv ut `Uppdragskort.pdf`
