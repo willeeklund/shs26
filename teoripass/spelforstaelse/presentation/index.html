@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spelförståelse – IK Göta</title>
+  <link rel="stylesheet" href="../../../grafisk-profil/templates/presentation.css" />
+  <link rel="icon" href="../../../grafisk-profil/logga.png" />
+  <style>
+    /* Presentationsspecifikt: fullbrett filmklipp med flytande play/paus-knapp */
+    .slide.video-slide {
+      padding: 0;
+    }
+    .video-wrap {
+      position: absolute;
+      inset: 0;
+      background: #000;
+    }
+    .video-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      background: #000;
+    }
+    .video-wrap .video-label {
+      position: absolute;
+      top: 5vh;
+      left: 6vw;
+      color: white;
+      text-align: left;
+      z-index: 5;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    }
+    .video-wrap .video-label .eyebrow {
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .video-wrap .video-label h2 {
+      color: white;
+      margin: 0;
+    }
+    .play-toggle {
+      position: absolute;
+      bottom: 28px;
+      right: 28px;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--ik-red);
+      color: white;
+      border: none;
+      font-size: 1.6rem;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+    }
+    .play-toggle:hover {
+      background: var(--ik-red-dark);
+    }
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <img class="logo-corner" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+
+    <!-- 1: Omslag -->
+    <section class="slide slide-red active">
+      <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+      <div class="eyebrow">IK Göta</div>
+      <h1>Spelförståelse</h1>
+      <p class="lead">Lär dig läsa spelet - inte bara pucken 🧠🏒</p>
+    </section>
+
+    <!-- 2: Hook -->
+    <section class="slide">
+      <div class="eyebrow">Fundera på det här</div>
+      <h2>Vad gör EN spelare svårare att slå än en annan?</h2>
+      <p class="lead">Ledtråd: det handlar inte bara om skridskor och skott 🤔</p>
+    </section>
+
+    <!-- 3: Roller intro -->
+    <section class="slide">
+      <div class="eyebrow">Del 1</div>
+      <h2>Du har alltid en roll på isen</h2>
+      <p class="lead">Och den kan byta flera gånger på bara några sekunder!</p>
+    </section>
+
+    <!-- 4: De 4 rollerna - anfall -->
+    <section class="slide">
+      <div class="eyebrow">När VI har pucken</div>
+      <h2>Anfallarens 2 roller 🎭</h2>
+      <div class="card-grid">
+        <div class="card"><span class="icon">🏒</span><span class="label">Anfallare med puck</span></div>
+        <div class="card"><span class="icon">🙌</span><span class="label">Anfallare utan puck</span></div>
+      </div>
+    </section>
+
+    <!-- 5: De 4 rollerna - försvar -->
+    <section class="slide">
+      <div class="eyebrow">När DE har pucken</div>
+      <h2>Försvararens 2 roller 🎭</h2>
+      <div class="card-grid">
+        <div class="card"><span class="icon">🛡️</span><span class="label">Försvarare närmast puck</span></div>
+        <div class="card"><span class="icon">👀</span><span class="label">Försvarare utan puck</span></div>
+      </div>
+    </section>
+
+    <!-- 6: Film - De 4 rollerna -->
+    <section class="slide video-slide">
+      <div class="video-wrap">
+        <div class="video-label">
+          <div class="eyebrow">Titta tillsammans</div>
+          <h2>De 4 rollerna 🎭</h2>
+        </div>
+        <video class="clip" src="../Filmer/de%204%20rollerna.mp4" playsinline preload="metadata"></video>
+        <button class="play-toggle" aria-label="Spela eller pausa filmen">▶</button>
+      </div>
+    </section>
+
+    <!-- 7: Passningsskugga -->
+    <section class="slide">
+      <div class="eyebrow">Del 2</div>
+      <h2>Undvik skuggan! 🕶️</h2>
+      <p class="lead">Stå ALDRIG så att en försvarare är mellan dig och pucken.<br />Rör dig till en öppen yta så kompisen kan nå dig!</p>
+    </section>
+
+    <!-- 8: Film - Passningsskugga -->
+    <section class="slide video-slide">
+      <div class="video-wrap">
+        <div class="video-label">
+          <div class="eyebrow">Titta tillsammans</div>
+          <h2>Passningsskugga 🕶️</h2>
+        </div>
+        <video class="clip" src="../Filmer/passningsskugga.mp4" playsinline preload="metadata"></video>
+        <button class="play-toggle" aria-label="Spela eller pausa filmen">▶</button>
+      </div>
+    </section>
+
+    <!-- 9: Håll pucken inom laget -->
+    <section class="slide">
+      <div class="eyebrow">Del 3</div>
+      <h2>Håll pucken inom laget 🤝</h2>
+      <p class="lead">En enkel säker passning slår nästan alltid en chansning</p>
+    </section>
+
+    <!-- 10: Ge sekunden (röd, extra tryck) -->
+    <section class="slide slide-red">
+      <h2>Ge sekunden till din kompis! ⏱️</h2>
+      <p class="lead">Ju snabbare du släpper pucken, desto mer tid får hen till sitt nästa drag</p>
+    </section>
+
+    <!-- 11: Film - Håll pucken inom laget -->
+    <section class="slide video-slide">
+      <div class="video-wrap">
+        <div class="video-label">
+          <div class="eyebrow">Titta tillsammans</div>
+          <h2>Håll pucken inom laget 🤝</h2>
+        </div>
+        <video class="clip" src="../Filmer/h%C3%A5ll%20pucken%20inom%20laget.mp4" playsinline preload="metadata"></video>
+        <button class="play-toggle" aria-label="Spela eller pausa filmen">▶</button>
+      </div>
+    </section>
+
+    <!-- 12: Give and go -->
+    <section class="slide">
+      <div class="eyebrow">Del 4</div>
+      <h2>Bli spelbar - give and go 🔄</h2>
+      <p class="lead">Passa - och fortsätt röra dig.<br />Kanske får du tillbaka pucken direkt!</p>
+    </section>
+
+    <!-- 13: Film - Give and go -->
+    <section class="slide video-slide">
+      <div class="video-wrap">
+        <div class="video-label">
+          <div class="eyebrow">Titta tillsammans</div>
+          <h2>Bli spelbar - give and go 🔄</h2>
+        </div>
+        <video class="clip" src="../Filmer/bli%20spelbar%20-%20give%20and%20go.mp4" playsinline preload="metadata"></video>
+        <button class="play-toggle" aria-label="Spela eller pausa filmen">▶</button>
+      </div>
+    </section>
+
+    <!-- 14: Fördelar på isen -->
+    <section class="slide">
+      <h2>Så märker du att det funkar - PÅ ISEN</h2>
+      <div class="card-grid">
+        <div class="card"><span class="icon">🚀</span><span class="label">Svårare att tackla</span></div>
+        <div class="card"><span class="icon">⏳</span><span class="label">Mer tid med pucken</span></div>
+        <div class="card"><span class="icon">🎯</span><span class="label">Fler bra lägen och mål</span></div>
+        <div class="card"><span class="icon">🏆</span><span class="label">Laget vinner fler dueller</span></div>
+      </div>
+    </section>
+
+    <!-- 15: Workshop intro -->
+    <section class="slide">
+      <div class="eyebrow">Nu är det din tur</div>
+      <h2>Bli spelförståelse-expert!</h2>
+      <p class="lead">Ni delas in i fyra grupper - en per situation</p>
+    </section>
+
+    <!-- 16: Så går det till -->
+    <section class="slide">
+      <h2>Så går det till</h2>
+      <ul class="steps">
+        <li><span class="num">1</span> Bli experter - titta på filmen, diskutera, rita</li>
+        <li><span class="num">2</span> Lär ut till hela laget</li>
+        <li><span class="num">3</span> Koppla ihop - vad tar vi med till isen?</li>
+      </ul>
+    </section>
+
+    <!-- 17: Motiverande sista tryck -->
+    <section class="slide">
+      <h2>Allt ni lär er idag testar vi PÅ ISEN nästa träning!</h2>
+      <p class="lead">Ju mer ni deltar nu, desto bättre känns det då 💪</p>
+    </section>
+
+    <!-- 18: Avslutning -->
+    <section class="slide slide-red">
+      <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+      <h1>Nu kör vi!</h1>
+    </section>
+
+    <div class="nav-controls">
+      <button class="nav-btn nav-prev" aria-label="Föregående">‹</button>
+      <div class="dots"></div>
+      <button class="nav-btn nav-next" aria-label="Nästa">›</button>
+    </div>
+    <div class="slide-counter"></div>
+  </div>
+  <script src="../../../grafisk-profil/templates/presentation.js"></script>
+  <script>
+    // Presentationsspecifikt: play/paus-knapp för filmklippen (samma knapp startar om efter slutet)
+    (function () {
+      document.querySelectorAll(".video-wrap").forEach(function (wrap) {
+        const video = wrap.querySelector("video");
+        const btn = wrap.querySelector(".play-toggle");
+        if (!video || !btn) return;
+
+        function setIcon() {
+          btn.textContent = video.paused || video.ended ? "▶" : "⏸";
+        }
+
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          if (video.paused || video.ended) {
+            if (video.ended) video.currentTime = 0;
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+
+        video.addEventListener("play", setIcon);
+        video.addEventListener("pause", setIcon);
+        video.addEventListener("ended", setIcon);
+        setIcon();
+      });
+    })();
+  </script>
+</body>
+</html>

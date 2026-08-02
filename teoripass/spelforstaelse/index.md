@@ -23,7 +23,7 @@ Rollen byter hela tiden under en match - ibland flera gånger på några sekunde
 ### 2. Passningsskugga 🕶️
 [Filmklipp: passningsskugga](Filmer/passningsskugga.mp4)
 
-Som anfallare utan pucken vill du ALDRIG stå i passningsskuggan - mitt emellan pucken och en försvarare. Står du där är det lätt för försvararen att sticka in klubban och ta passningen innan den når dig.
+Som anfallare utan pucken vill du ALDRIG stå så att en försvarare är mellan dig och pucken - det kallas att stå i passningsskuggan. Då är det lätt för försvararen att sticka in klubban och ta passningen innan den når dig.
 
 Därför måste du hela tiden röra på dig när ditt lag har pucken och du själv inte har den just nu - hitta en yta där ingen försvarare täcker vägen, så att din lagkompis faktiskt kan nå dig med passningen.
 
