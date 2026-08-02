@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Teoripass – IK Göta</title>
+<link rel="icon" href="../grafisk-profil/logga.png" />
+<style>
+  :root {
+    --ik-red: #AF2924;
+    --ik-red-dark: #7c1d19;
+    --ik-text: #221615;
+    --ik-text-soft: #5a4443;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Verdana, Arial, sans-serif;
+    color: var(--ik-text);
+    background: #fff;
+  }
+  header {
+    background: var(--ik-red);
+    color: white;
+    padding: 6vh 6vw 5vh;
+    text-align: center;
+  }
+  header img {
+    width: 96px;
+    margin-bottom: 0.6em;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.3));
+  }
+  header .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.4em;
+  }
+  header h1 {
+    margin: 0 0 0.3em 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  header p {
+    margin: 0 auto;
+    max-width: 46ch;
+    font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+    opacity: 0.95;
+  }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5vh 6vw 8vh;
+  }
+  h2.section-title {
+    color: var(--ik-red);
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    margin: 1.6em 0 0.8em 0;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2em;
+  }
+  .card {
+    border: 2px solid var(--ik-red);
+    border-radius: 16px;
+    padding: 1.4em 1.4em 1.6em;
+    box-shadow: 0 4px 0 var(--ik-red);
+    display: flex;
+    flex-direction: column;
+  }
+  .card .emoji {
+    font-size: 2.2rem;
+    margin-bottom: 0.2em;
+  }
+  .card h3 {
+    margin: 0 0 0.3em 0;
+    font-size: 1.2rem;
+  }
+  .card p {
+    margin: 0 0 1em 0;
+    color: var(--ik-text-soft);
+    font-size: 0.98rem;
+    flex-grow: 1;
+  }
+  .card .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.6em 1em;
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
+  .btn-primary {
+    background: var(--ik-red);
+    color: white;
+  }
+  .btn-primary:hover {
+    background: var(--ik-red-dark);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--ik-red);
+    border: 2px solid var(--ik-red);
+  }
+  .btn-secondary:hover {
+    background: #fbeceb;
+  }
+  .card.upcoming {
+    border-color: #ddd;
+    box-shadow: 0 4px 0 #ddd;
+    opacity: 0.85;
+  }
+  .card.upcoming h3 {
+    color: var(--ik-text-soft);
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #999;
+    background: #f2f2f2;
+    padding: 0.3em 0.7em;
+    border-radius: 999px;
+    align-self: flex-start;
+    margin-top: auto;
+  }
+  footer {
+    text-align: center;
+    padding: 3vh 6vw 6vh;
+    color: var(--ik-text-soft);
+    font-size: 0.9rem;
+  }
+  @media (max-width: 500px) {
+    header { padding: 8vh 6vw 6vh; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <img src="../grafisk-profil/logga.png" alt="IK Göta logga" />
+    <div class="eyebrow">IK Göta · Team-16</div>
+    <h1>Workshops</h1>
+    <p>Korta, lekfulla genomgångar - inte tråkig teori. Klicka på ett pass för att öppna presentationen direkt.</p>
+  </header>
+
+  <main>
+    <h2 class="section-title">🎥 Klara presentationer</h2>
+    <div class="cards">
+      <div class="card">
+        <span class="emoji">❤️</span>
+        <h3>Varför spelar vi ishockey?</h3>
+        <p>Ett samtal om varför vi spelar hockey och vad som motiverar oss.</p>
+        <div class="links">
+          <a class="btn btn-primary" href="https://willeeklund.github.io/shs26/teoripass/why-we-play/presentation/">Öppna presentation →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="emoji">🧠</span>
+        <h3>Spelförståelse</h3>
+        <p>En workshop om att läsa spelet - roller, positionering och passningsval.</p>
+        <div class="links">
+          <a class="btn btn-primary" href="https://willeeklund.github.io/shs26/teoripass/spelforstaelse/presentation/">Öppna presentation →</a>
+          <a class="btn btn-secondary" href="https://willeeklund.github.io/shs26/teoripass/spelforstaelse/uppdragskort/uppdragskort.pdf">📋 Uppdragskort (PDF)</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="emoji">🌟</span>
+        <h3>Hur vill du uppfattas?</h3>
+        <p>En workshop om att skapa bra beteenden i laget - och hur beteende smittar av sig.</p>
+        <div class="links">
+          <a class="btn btn-primary" href="https://willeeklund.github.io/shs26/teoripass/hur-vill-du-uppfattas/presentation/">Öppna presentation →</a>
+          <a class="btn btn-secondary" href="https://willeeklund.github.io/shs26/teoripass/hur-vill-du-uppfattas/situationskort/situationskort.pdf">📋 Situationskort (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">🚧 Under arbete</h2>
+    <div class="cards">
+      <div class="card upcoming">
+        <span class="emoji">💪</span>
+        <h3>Fysträning</h3>
+        <p>Fysisk träning utanför isen som gör dig till en bättre hockeyspelare.</p>
+        <span class="badge">Ingen presentation ännu</span>
+      </div>
+
+      <div class="card upcoming">
+        <span class="emoji">✏️</span>
+        <h3>Rita taktik</h3>
+        <p>Laget ritar taktiska lösningar tillsammans - passningsvägar, anfall och försvar.</p>
+        <span class="badge">Ingen presentation ännu</span>
+      </div>
+
+      <div class="card upcoming">
+        <span class="emoji">🏆</span>
+        <h3>Skills-competition</h3>
+        <p>Se din personliga utveckling under året.</p>
+        <span class="badge">Ingen presentation ännu</span>
+      </div>
+
+      <div class="card upcoming">
+        <span class="emoji">🔍</span>
+        <h3>Syftet med övningen</h3>
+        <p>Laget lär sig sätta ord på vad varje övning faktiskt tränar upp.</p>
+        <span class="badge">Ingen presentation ännu</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    IK Göta · Sommarhockeyskolan 2026
+  </footer>
+</body>
+</html>

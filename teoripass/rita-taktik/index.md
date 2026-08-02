@@ -1,4 +1,5 @@
 # Rita taktik
+Laget ritar taktiska lösningar tillsammans - passningsvägar, anfall och försvar.
 
 ## Mål med passet
 Vi ska se vanliga situationer och rita upp sina lösningar - var är den säkraste passningsvägen, hur rör vi oss tillsammans i anfall och försvar.

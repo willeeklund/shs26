@@ -1,4 +1,5 @@
 # Fysträning
+Fysisk träning utanför isen som gör dig till en bättre hockeyspelare.
 
 ## Mål med passet
 Träning utanför isen (fys) gör dig till en bättre hockeyspelare - inte bara starkare, utan snabbare och tåligare på isen.

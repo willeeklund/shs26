@@ -1,4 +1,5 @@
 # Syftet med övningen
+Laget lär sig sätta ord på vad varje övning faktiskt tränar upp.
 
 ## Mål med passet
 Barnen ska själva kunna förklara vad man tränar på i våra övningar - inte bara göra dem. Om de förstår syftet kommer de göra övningarna med rätt fokus även när ingen coachar dem för stunden.
