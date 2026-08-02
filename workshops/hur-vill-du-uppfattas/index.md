@@ -2,6 +2,7 @@
 En workshop om att skapa bra beteenden i laget.
 
 🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/workshops/hur-vill-du-uppfattas/presentation/)
+
 📋 **Stödmaterial:** [situationskort.pdf](situationskort/situationskort.pdf) (24 situationskort, skrivs ut och klipps isär)
 
 - Hur vill jag bli uppfattad av mina lagkamrater och som hockeyspelare?

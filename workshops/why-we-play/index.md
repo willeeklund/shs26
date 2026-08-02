@@ -3,8 +3,8 @@ Ett samtal om varför vi spelar hockey och vad som motiverar oss.
 
 🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/workshops/why-we-play/presentation/)
 
-Det är viktigt att börja med att besvara Varför vi gör det vi gör.
-Hur och Vad kommer senare.
+Det är viktigt att börja med att besvara **Varför** vi gör det vi gör.
+**Hur** och **Vad** kommer senare.
 
 ## Varför är det roligt med ishockey?
 Det var svårt för spelarna i somras att formulera varför de spelar hockey.

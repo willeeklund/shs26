@@ -2,6 +2,10 @@
 
 Vi jobbar tillsammans för att upptäcka och lära - inte bara lyssna på teori. Översikt över alla workshops. Klicka på ett namn för fullständiga anteckningar/upplägg, eller direkt på en presentation för att visa den i webbläsaren.
 
+## Filstruktur för workshops
+Varje workshop har en `index.md` fil som innehåller basen för materialet. Baserat på det innehållet skapas sedan en presentation. Det kan också finnas andra stödfiler, ibland filer som blir en del av presentationen och ibland material som ska skrivas ut för workshopen.
+
+
 ## Klara presentationer
 
 | Workshop | Presentation | Stödmaterial |
@@ -19,5 +23,3 @@ Vi jobbar tillsammans för att upptäcka och lära - inte bara lyssna på teori.
 | [Skills-competition](skills-competition/index.md) | Se din personliga utveckling under året |
 | [Syftet med övningen](syftet-med-övningen/index.md) | Laget lär sig sätta ord på vad varje övning tränar upp |
 
-## Filstruktur för workshops
-En `index.md` fil innehåller basen för materialet. Baserat på det innehållet skapas sedan en presentation. Det kan också finnas andra stödfiler, ibland filer som blir en del av presentationen och ibland material som ska skrivas ut för workshopen.
