@@ -1,6 +1,6 @@
 # Presentationsmall – IK Göta
 
-Delad mall för HTML-presentationer av teoripassen i `teoripass/`.
+Delad mall för HTML-presentationer av workshoparna i `workshops/`.
 
 ## Filer
 - `presentation-template.html` – kopiera denna för en ny presentation
@@ -8,7 +8,7 @@ Delad mall för HTML-presentationer av teoripassen i `teoripass/`.
 - `presentation.js` – navigering (piltangenter, klick, svep, prickar, progressbar). Ändra inte per presentation.
 
 ## Ny presentation, steg för steg
-1. Kopiera `presentation-template.html` till `teoripass/<mapp>/presentation/index.html`
+1. Kopiera `presentation-template.html` till `workshops/<mapp>/presentation/index.html`
 2. Byt `<title>` och innehållet i varje `<section class="slide">`
 3. Öppna filen i webbläsaren och bläddra med piltangenter, mellanslag eller prickarna längst ner
 

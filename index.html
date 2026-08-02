@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+  Denna sida hämtar och renderar README.md från repo-roten vid sidladdning.
+  Det finns bara EN hubbsida (den här) - inget att hålla i synk.
+  Vill du ändra text eller lägga till/ta bort en workshop: redigera README.md.
+-->
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Team-16 Sommarhockeyskolan 2026 – IK Göta</title>
+<link rel="icon" href="grafisk-profil/logga.png" />
+<script src="https://cdn.jsdelivr.net/npm/marked@11/lib/marked.umd.min.js"></script>
+<style>
+  :root {
+    --ik-red: #AF2924;
+    --ik-red-dark: #7c1d19;
+    --ik-text: #221615;
+    --ik-text-soft: #5a4443;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Verdana, Arial, sans-serif;
+    color: var(--ik-text);
+    background: #fff;
+  }
+  header {
+    background: var(--ik-red);
+    color: white;
+    padding: 6vh 6vw 5vh;
+    text-align: center;
+  }
+  header img {
+    width: 96px;
+    margin-bottom: 0.6em;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.3));
+  }
+  header .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.4em;
+  }
+  header h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 5vh 6vw 8vh;
+  }
+
+  /* --- Stilar för det inrenderade README-innehållet --- */
+  #content h1 {
+    display: none; /* "SHS Sommar Hockey Skolan 2026" - redan täckt av hero-titeln ovan */
+  }
+  #content h2 {
+    color: var(--ik-red);
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    margin: 1.6em 0 0.6em 0;
+  }
+  #content p {
+    line-height: 1.55;
+  }
+  #content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.2em 0;
+  }
+  #content ul li {
+    border: 2px solid var(--ik-red);
+    border-radius: 16px;
+    padding: 1em 1.2em;
+    margin-bottom: 0.8em;
+    box-shadow: 0 4px 0 var(--ik-red);
+  }
+  /* "Under arbete"-workshops har inga länkar än - visa dem gråa istället för röda */
+  #content ul li:not(:has(a)) {
+    border-color: #ddd;
+    box-shadow: 0 4px 0 #ddd;
+    color: var(--ik-text-soft);
+  }
+  #content a {
+    color: var(--ik-red);
+    font-weight: 600;
+  }
+  #content a[href*="/presentation/"],
+  #content a[href$=".pdf"] {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5em 0.9em;
+    border-radius: 10px;
+    margin-top: 0.5em;
+    margin-right: 0.4em;
+  }
+  #content a[href*="/presentation/"] {
+    background: var(--ik-red);
+    color: white;
+  }
+  #content a[href*="/presentation/"]:hover {
+    background: var(--ik-red-dark);
+  }
+  #content a[href$=".pdf"] {
+    background: transparent;
+    color: var(--ik-red);
+    border: 2px solid var(--ik-red);
+  }
+  #content a[href$=".pdf"]:hover {
+    background: #fbeceb;
+  }
+  #content .loading,
+  #content .error {
+    color: var(--ik-text-soft);
+    text-align: center;
+    padding: 4vh 0;
+  }
+  footer {
+    text-align: center;
+    padding: 3vh 6vw 6vh;
+    color: var(--ik-text-soft);
+    font-size: 0.9rem;
+  }
+  @media (max-width: 500px) {
+    header { padding: 8vh 6vw 6vh; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <img src="grafisk-profil/logga.png" alt="IK Göta logga" />
+    <div class="eyebrow">IK Göta · Team-16</div>
+    <h1>Sommarhockeyskolan 2026</h1>
+  </header>
+
+  <main>
+    <div id="content"><p class="loading">Laddar…</p></div>
+  </main>
+
+  <footer>
+    IK Göta · Sommarhockeyskolan 2026
+  </footer>
+
+  <script>
+    fetch("README.md")
+      .then((res) => {
+        if (!res.ok) throw new Error("Kunde inte hämta README.md (" + res.status + ")");
+        return res.text();
+      })
+      .then((text) => {
+        const html = typeof marked === "function" ? marked(text) : marked.parse(text);
+        document.getElementById("content").innerHTML = html;
+      })
+      .catch((err) => {
+        document.getElementById("content").innerHTML =
+          '<p class="error">Kunde inte ladda innehållet just nu. Se <a href="https://github.com/willeeklund/shs26/blob/main/README.md">README.md direkt på GitHub</a> istället.</p>';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>

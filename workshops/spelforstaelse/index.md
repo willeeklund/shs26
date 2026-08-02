@@ -1,7 +1,7 @@
 # Spelförståelse
 En workshop om att läsa spelet - roller, positionering och passningsval.
 
-🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/teoripass/spelforstaelse/presentation/)
+🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/workshops/spelforstaelse/presentation/)
 📋 **Stödmaterial:** [uppdragskort.pdf](uppdragskort/uppdragskort.pdf) (QR-koder till filmklippen + gruppfrågor)
 
 Detta pass är baserat på materialet "Spelförståelse" från "Barn och ungdom 1"-kursen.

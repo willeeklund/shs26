@@ -1,7 +1,7 @@
 # Varför spelar vi ishockey?
 Ett samtal om varför vi spelar hockey och vad som motiverar oss.
 
-🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/teoripass/why-we-play/presentation/)
+🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/workshops/why-we-play/presentation/)
 
 Det är viktigt att börja med att besvara Varför vi gör det vi gör.
 Hur och Vad kommer senare.

@@ -5,7 +5,7 @@ Kör om (python3 build_qr.py) om filmerna flyttas eller döps om.
 
 import qrcode
 
-BASE = "https://willeeklund.github.io/shs26/teoripass/spelforstaelse/Filmer/"
+BASE = "https://willeeklund.github.io/shs26/workshops/spelforstaelse/Filmer/"
 
 urls = {
     "roller": BASE + "de%204%20rollerna.mp4",
