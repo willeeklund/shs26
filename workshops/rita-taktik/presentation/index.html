@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rita taktik – IK Göta</title>
+  <link rel="stylesheet" href="../../../grafisk-profil/templates/presentation.css" />
+  <link rel="icon" href="../../../grafisk-profil/logga.png" />
+  <style>
+    /* Exempelbild av rink-scenariot på stationsslidesen - specifik för denna presentation */
+    .scenario-img {
+      max-width: 68vw;
+      max-height: 42vh;
+      object-fit: contain;
+      margin-top: 0.8em;
+      border-radius: 12px;
+      border: 2px solid rgba(175, 41, 36, 0.25);
+    }
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <img class="logo-corner" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+
+    <!-- 1: Omslag -->
+    <section class="slide slide-red active">
+      <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+      <div class="eyebrow">IK Göta</div>
+      <h1>Rita taktik</h1>
+      <p class="lead">Rita era bästa lösningar tillsammans! ✏️</p>
+    </section>
+
+    <!-- 2: Hook-fråga -->
+    <section class="slide">
+      <div class="eyebrow">Fundera på det här</div>
+      <h2>Vart kommer pucken hamna? Var ska DU vara?</h2>
+      <p class="lead">Idag ritar vi svaret!</p>
+    </section>
+
+    <!-- 3: Så läser ni bilderna -->
+    <section class="slide">
+      <h2>Så läser ni bilderna</h2>
+      <div class="card-grid">
+        <div class="card"><span class="icon">⭕</span><span class="label">Försvarare</span></div>
+        <div class="card"><span class="icon">✖️</span><span class="label">Anfallare</span></div>
+      </div>
+    </section>
+
+    <!-- 4: Så funkar det -->
+    <section class="slide">
+      <h2>Så funkar det</h2>
+      <ul class="steps">
+        <li><span class="num">1</span> Del 1: Bästa passningen</li>
+        <li><span class="num">2</span> Del 2: Anfall</li>
+        <li><span class="num">3</span> Del 3: Försvar</li>
+      </ul>
+    </section>
+
+    <!-- 5: Del 1 -->
+    <section class="slide">
+      <div class="eyebrow">Del 1</div>
+      <h2>Bästa passningen</h2>
+      <p class="lead">Titta på bilden - var är dina lagkompisar och var är motståndarna?<br />✏️ Rita en pil dit du skulle passa pucken</p>
+      <img class="scenario-img" src="../rinkmallar/passning-latt.png" alt="Exempel: bästa passningen" />
+    </section>
+
+    <!-- 6: Del 2 -->
+    <section class="slide">
+      <div class="eyebrow">Del 2</div>
+      <h2>Anfall</h2>
+      <p class="lead">Ni är fler än motståndarna!<br />✏️ Rita var alla anfallare borde åka för ett bra skottläge</p>
+      <img class="scenario-img" src="../rinkmallar/anfall-forsvar-latt.png" alt="Exempel: anfall" />
+    </section>
+
+    <!-- 7: Del 3 -->
+    <section class="slide">
+      <div class="eyebrow">Del 3</div>
+      <h2>Försvar</h2>
+      <p class="lead">Samma bild - men nu är NI försvarare istället.<br />✏️ Rita var försvararna borde stå för att stoppa anfallet</p>
+      <img class="scenario-img" src="../rinkmallar/anfall-forsvar-latt.png" alt="Exempel: försvar" />
+    </section>
+
+    <!-- 9: Avslutning -->
+    <section class="slide slide-red">
+      <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+      <h1>Nu kör vi!</h1>
+    </section>
+
+    <div class="nav-controls">
+      <button class="nav-btn nav-prev" aria-label="Föregående">‹</button>
+      <div class="dots"></div>
+      <button class="nav-btn nav-next" aria-label="Nästa">›</button>
+    </div>
+    <div class="slide-counter"></div>
+  </div>
+  <script src="../../../grafisk-profil/templates/presentation.js"></script>
+</body>
+</html>

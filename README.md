@@ -4,6 +4,8 @@ Planeringen för Team-16 verksamheten under Sommarhockeyskolan 2026.
 
 👉 **[Öppna workshop-sidan](workshops/)** - en enda länk, inget mer behövs. Klicka på en workshop för att öppna presentationen direkt i webbläsaren.
 
+Källkoden för allt detta finns publikt [här på Github](https://github.com/willeeklund/shs26).
+
 ## Tankar vid skapandet av dessa workshops
 Grundtanken: vi jobbar tillsammans för att **upptäcka och lära** - vi ska inte bara lyssna på teori. Målgruppen är 10-åriga hockeyspelare, så varje workshop är byggd för att vara **kort, lekfull och interaktiv** - inte en lärare som pratar i 30 minuter. Konkret betyder det:
 - Spelarna jobbar själva i smågrupper med riktiga situationer - både från isen och utanför

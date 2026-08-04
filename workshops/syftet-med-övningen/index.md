@@ -7,7 +7,7 @@ Laget lär sig sätta ord på vad varje övning faktiskt tränar upp.
 ## Mål med passet
 Barnen ska själva kunna förklara vad man tränar på i våra övningar - inte bara göra dem. Om de förstår syftet kommer de göra övningarna med rätt fokus även när ingen coachar dem för stunden.
 
-Bilderna på övningarna som Alexandre har ritat och som vi kört under våren finns i mappen ["Enskilda övningar"](Enskilda%20övningar). Originalen (ospäckade helpass) ligger i ["Råmaterial"](Råmaterial).
+Bilderna på övningarna som Alexandre har ritat och som vi kört under våren finns i mappen ["Enskilda övningar"](Enskilda%20övningar). Originalen (ospäckade helpass) ligger i ["Råmaterial"](Råmaterial). Övning 25 ("teknik med puck runt koner") är medvetet exkluderad från korten - gav inte tillräckligt mycket för ett eget kort, och 24 går jämnt upp i grupper om 4.
 
 ## Material
 - Skriv ut [övningskort](ovningskort/ovningskort.html) **dubbelsidigt** (long-edge-vändning) - 4 övningar per A4-sida i ett 2x2-rutnät, klipp isär i fyra kvadranter efter utskrift. Framsidan är Alexandres ritning utan pyssel runt om (bilden fyller kvadranten), baksidan har två korta fält: "Namn på övningen" och "Vad tränar vi?" (laminera gärna, de kan återanvändas varje år)
@@ -51,6 +51,6 @@ De flesta övningarna har flera syften samtidigt. Om grupperna har svårt att s�
 - Spara korten! Namnen laget kommer på blir sedan de riktiga namnen vi använder på träningarna - lätt att ropa ut utan att behöva visa varje gång.
 
 ## TODO
-- [x] Skapa övningskort - se [ovningskort/ovningskort.html](ovningskort/ovningskort.html), dubbelsidigt, 4 övningar per A4-sida (7 sidpar / 14 sidor totalt för alla 25 övningarna).
+- [x] Skapa övningskort - se [ovningskort/ovningskort.html](ovningskort/ovningskort.html), dubbelsidigt, 4 övningar per A4-sida (6 sidpar / 12 sidor totalt för alla 24 övningarna).
 - [ ] Skriv ut, klipp isär raderna och laminera övningskorten inför passet. Varje grupp ska ha 2-3 kort.
 - [ ] Bestäm gruppindelning i förväg (blandade nivåer i varje grupp brukar fungera bra)

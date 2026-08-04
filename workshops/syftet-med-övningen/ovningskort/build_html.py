@@ -22,6 +22,9 @@ SRC_DIR = "../Enskilda övningar"
 IMG_DIR = "img"
 OUTPUT = "ovningskort.html"
 
+# Uteslutna övningar - ger inte tillräckligt mycket för att vara med som eget kort
+EXCLUDE = {"teknik med puck runt koner.png"}
+
 
 def slugify(name):
     name = unicodedata.normalize("NFC", name.rsplit(".", 1)[0].lower())
@@ -31,7 +34,10 @@ def slugify(name):
 
 
 def collect_cards():
-    files = sorted(f for f in os.listdir(SRC_DIR) if f.lower().endswith(".png"))
+    files = sorted(
+        f for f in os.listdir(SRC_DIR)
+        if f.lower().endswith(".png") and f not in EXCLUDE
+    )
     os.makedirs(IMG_DIR, exist_ok=True)
     cards = []
     for i, fname in enumerate(files, start=1):

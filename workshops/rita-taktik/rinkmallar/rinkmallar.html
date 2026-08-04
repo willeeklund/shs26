@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<title>Rita taktik - rinkmallar</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    display: flex;
+    flex-direction: column;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+  .card {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    border-bottom: 1px dashed #bbb;
+    padding: 6mm 12mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .card:last-child { border-bottom: none; }
+  .card-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex: none;
+  }
+  .station-label {
+    font-size: 4mm;
+    font-weight: 700;
+    color: #AF2924;
+  }
+  .difficulty-label {
+    font-size: 3.2mm;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .legend {
+    flex: none;
+    font-size: 3mm;
+    color: #555;
+    margin: 1mm 0;
+  }
+  .rink {
+    flex: 1;
+    min-height: 0;
+    max-width: 92%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 1.5mm 0;
+  }
+  .instruction {
+    flex: none;
+    font-size: 3.8mm;
+    font-weight: 700;
+    color: #AF2924;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  
+  <div class="page">
+    
+    <div class="card">
+      <div class="card-top">
+        <span class="station-label">Del 1: Bästa passningen</span>
+        <span class="difficulty-label">Lätt</span>
+      </div>
+      <div class="legend">⭕ = Försvarare&nbsp;&nbsp;&nbsp;✖️ = Anfallare</div>
+      <img class="rink" src="passning-latt.png" alt="Isbane-diagram" />
+      <p class="instruction">✏️ Rita en pil dit du skulle passa pucken</p>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <span class="station-label">Del 1: Bästa passningen</span>
+        <span class="difficulty-label">Medel</span>
+      </div>
+      <div class="legend">⭕ = Försvarare&nbsp;&nbsp;&nbsp;✖️ = Anfallare</div>
+      <img class="rink" src="passning-medel.png" alt="Isbane-diagram" />
+      <p class="instruction">✏️ Rita en pil dit du skulle passa pucken</p>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <span class="station-label">Del 1: Bästa passningen</span>
+        <span class="difficulty-label">Svår</span>
+      </div>
+      <div class="legend">⭕ = Försvarare&nbsp;&nbsp;&nbsp;✖️ = Anfallare</div>
+      <img class="rink" src="passning-svar.png" alt="Isbane-diagram" />
+      <p class="instruction">✏️ Rita en pil dit du skulle passa pucken</p>
+    </div>
+    
+  </div>
+    
+  <div class="page">
+    
+    <div class="card">
+      <div class="card-top">
+        <span class="station-label">Del 2: Anfall</span>
+        <span class="difficulty-label">Lätt</span>
+      </div>
+      <div class="legend">⭕ = Försvarare&nbsp;&nbsp;&nbsp;✖️ = Anfallare</div>
+      <img class="rink" src="anfall-forsvar-latt.png" alt="Isbane-diagram" />
+      <p class="instruction">✏️ Rita var alla anfallare borde åka</p>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <span class="station-label">Del 2: Anfall</span>
+        <span class="difficulty-label">Medel</span>
+      </div>
+      <div class="legend">⭕ = Försvarare&nbsp;&nbsp;&nbsp;✖️ = Anfallare</div>
+      <img class="rink" src="anfall-forsvar-medel.png" alt="Isbane-diagram" />
+      <p class="instruction">✏️ Rita var alla anfallare borde åka</p>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <span class="station-label">Del 2: Anfall</span>
+        <span class="difficulty-label">Svår</span>
+      </div>
+      <div class="legend">⭕ = Försvarare&nbsp;&nbsp;&nbsp;✖️ = Anfallare</div>
+      <img class="rink" src="anfall-forsvar-svar.png" alt="Isbane-diagram" />
+      <p class="instruction">✏️ Rita var alla anfallare borde åka</p>
+    </div>
+    
+  </div>
+    
+  <div class="page">
+    
+    <div class="card">
+      <div class="card-top">
+        <span class="station-label">Del 3: Försvar</span>
+        <span class="difficulty-label">Lätt</span>
+      </div>
+      <div class="legend">⭕ = Försvarare&nbsp;&nbsp;&nbsp;✖️ = Anfallare</div>
+      <img class="rink" src="anfall-forsvar-latt.png" alt="Isbane-diagram" />
+      <p class="instruction">✏️ Rita var försvararna borde stå</p>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="station-label">Del 3: Försvar</span>
+        <span class="difficulty-label">Medel</span>
+      </div>
+      <div class="legend">⭕ = Försvarare&nbsp;&nbsp;&nbsp;✖️ = Anfallare</div>
+      <img class="rink" src="anfall-forsvar-medel.png" alt="Isbane-diagram" />
+      <p class="instruction">✏️ Rita var försvararna borde stå</p>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <span class="station-label">Del 3: Försvar</span>
+        <span class="difficulty-label">Svår</span>
+      </div>
+      <div class="legend">⭕ = Försvarare&nbsp;&nbsp;&nbsp;✖️ = Anfallare</div>
+      <img class="rink" src="anfall-forsvar-svar.png" alt="Isbane-diagram" />
+      <p class="instruction">✏️ Rita var försvararna borde stå</p>
+    </div>
+    
+  </div>
+    
+</body>
+</html>
