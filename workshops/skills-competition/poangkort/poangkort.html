@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<title>Skills Competition – poängkort</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: #e5e5e5;
+  }
+
+  .toolbar {
+    text-align: center;
+    padding: 14px;
+  }
+  .toolbar button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #1a1a1a;
+    color: white;
+    cursor: pointer;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: white;
+    page-break-after: always;
+  }
+
+  .card {
+    position: relative;
+    border: 1px dashed #bbb;
+    padding: 5mm 6mm 4mm;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 3mm;
+    border-bottom: 0.6mm solid #AF2924;
+    padding-bottom: 2mm;
+    margin-bottom: 2.5mm;
+    flex: none;
+  }
+
+  .card-header .logo {
+    width: 11mm;
+    height: 11mm;
+    object-fit: contain;
+    flex: none;
+  }
+
+  .card-header .header-text {
+    line-height: 1.15;
+  }
+
+  .card-header .title {
+    font-size: 4.4mm;
+    font-weight: 800;
+    color: #AF2924;
+  }
+
+  .card-header .subtitle {
+    font-size: 2.5mm;
+    color: #5a4443;
+  }
+
+  .name-field {
+    flex: none;
+    font-size: 3mm;
+    font-weight: 600;
+    color: #221615;
+    margin-bottom: 4.5mm;
+    display: flex;
+    align-items: baseline;
+    gap: 2mm;
+  }
+
+  .name-field .line {
+    flex: 1;
+    border-bottom: 0.4mm solid #999;
+    height: 7mm;
+  }
+
+  table.score-table {
+    flex: 1;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  .score-table th,
+  .score-table td {
+    border: 0.25mm solid #ccc;
+    text-align: center;
+    font-size: 2.5mm;
+    padding: 0.5mm 0.8mm;
+  }
+
+  .score-table col.col-gren { width: 36mm; }
+
+  .score-table thead th {
+    background: #AF2924;
+    color: white;
+    font-weight: 700;
+    padding: 1mm 0.8mm;
+  }
+
+  .score-table tbody th {
+    text-align: left;
+    font-weight: 600;
+    background: #f6ecec;
+    padding-left: 1.5mm;
+  }
+
+  .hint {
+    flex: none;
+    font-size: 2.3mm;
+    color: #5a4443;
+    margin: 1.8mm 0 0;
+    text-align: center;
+  }
+
+  @media print {
+    body { background: white; }
+    .toolbar { display: none; }
+    .page { box-shadow: none; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <button onclick="window.print()">Skriv ut</button>
+  </div>
+
+  <div class="page">
+
+    <!-- Kort x4, ett per spelare, samma mall upprepad -->
+    <div class="card">
+      <div class="card-header">
+        <img class="logo" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+        <div class="header-text">
+          <div class="title">Göta Skills Competition</div>
+          <div class="subtitle">Se din utveckling under veckan!</div>
+        </div>
+      </div>
+      <div class="name-field">Namn:<span class="line"></span></div>
+      <table class="score-table">
+        <colgroup>
+          <col class="col-gren" />
+          <col /><col /><col /><col /><col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th>#1</th>
+            <th>#2</th>
+            <th>#3</th>
+            <th>#4</th>
+            <th>#5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Mål-med-hål, 5 puckar (poäng)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Dribblingsmaskin (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>4 kvadranter Forehand</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>4 kvadranter Backhand</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Varv runt isen (sekunder)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>60m löpning (sekunder)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Dribbla i mössan (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Passningar (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Slagskott (km/h)</th><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <p class="hint">Skriv bara in nytt resultat om det är BÄTTRE än förra! 🏒</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <img class="logo" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+        <div class="header-text">
+          <div class="title">Göta Skills Competition</div>
+          <div class="subtitle">Se din utveckling under veckan!</div>
+        </div>
+      </div>
+      <div class="name-field">Namn:<span class="line"></span></div>
+      <table class="score-table">
+        <colgroup>
+          <col class="col-gren" />
+          <col /><col /><col /><col /><col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th>#1</th>
+            <th>#2</th>
+            <th>#3</th>
+            <th>#4</th>
+            <th>#5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Mål-med-hål, 5 puckar (poäng)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Dribblingsmaskin (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>4 kvadranter Forehand</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>4 kvadranter Backhand</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Varv runt isen (sekunder)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>60m löpning (sekunder)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Dribbla i mössan (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Passningar (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Slagskott (km/h)</th><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <p class="hint">Skriv bara in nytt resultat om det är BÄTTRE än förra! 🏒</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <img class="logo" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+        <div class="header-text">
+          <div class="title">Göta Skills Competition</div>
+          <div class="subtitle">Se din utveckling under veckan!</div>
+        </div>
+      </div>
+      <div class="name-field">Namn:<span class="line"></span></div>
+      <table class="score-table">
+        <colgroup>
+          <col class="col-gren" />
+          <col /><col /><col /><col /><col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th>#1</th>
+            <th>#2</th>
+            <th>#3</th>
+            <th>#4</th>
+            <th>#5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Mål-med-hål, 5 puckar (poäng)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Dribblingsmaskin (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>4 kvadranter Forehand</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>4 kvadranter Backhand</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Varv runt isen (sekunder)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>60m löpning (sekunder)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Dribbla i mössan (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Passningar (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Slagskott (km/h)</th><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <p class="hint">Skriv bara in nytt resultat om det är BÄTTRE än förra! 🏒</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <img class="logo" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+        <div class="header-text">
+          <div class="title">Göta Skills Competition</div>
+          <div class="subtitle">Se din utveckling under veckan!</div>
+        </div>
+      </div>
+      <div class="name-field">Namn:<span class="line"></span></div>
+      <table class="score-table">
+        <colgroup>
+          <col class="col-gren" />
+          <col /><col /><col /><col /><col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th>#1</th>
+            <th>#2</th>
+            <th>#3</th>
+            <th>#4</th>
+            <th>#5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Mål-med-hål, 5 puckar (poäng)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Dribblingsmaskin (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>4 kvadranter Forehand</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>4 kvadranter Backhand</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Varv runt isen (sekunder)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>60m löpning (sekunder)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Dribbla i mössan (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Passningar (1 min)</th><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Slagskott (km/h)</th><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <p class="hint">Skriv bara in nytt resultat om det är BÄTTRE än förra! 🏒</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
