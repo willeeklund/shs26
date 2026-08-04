@@ -13,6 +13,7 @@ Varje workshop har en `index.md` fil som innehåller basen för materialet. Base
 | [Varför spelar vi ishockey?](why-we-play/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/why-we-play/presentation/) | [Lappar till rangordningsövning](why-we-play/print/index.html) |
 | [Skills-competition](skills-competition/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/skills-competition/presentation/) | [Poängkort att skriva ut](skills-competition/poangkort/poangkort.html) |
 | [Spelförståelse](spelforstaelse/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/spelforstaelse/presentation/) | [Uppdragskort (QR + frågor)](spelforstaelse/uppdragskort/uppdragskort.pdf) |
+| [Syftet med övningen](syftet-med-övningen/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/syftet-med-övningen/presentation/) | [Övningskort att skriva ut dubbelsidigt](syftet-med-övningen/ovningskort/ovningskort.html) |
 | [Hur vill du uppfattas?](hur-vill-du-uppfattas/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/hur-vill-du-uppfattas/presentation/) | [Situationskort](hur-vill-du-uppfattas/situationskort/situationskort.pdf) |
 
 ## Under arbete (ingen presentation ännu)
@@ -21,5 +22,4 @@ Varje workshop har en `index.md` fil som innehåller basen för materialet. Base
 |---|---|
 | [Fysträning](fysträning/index.md) | Fysisk träning utanför isen som gör dig till en bättre hockeyspelare |
 | [Rita taktik](rita-taktik/index.md) | Laget ritar taktiska lösningar tillsammans |
-| [Syftet med övningen](syftet-med-övningen/index.md) | Laget lär sig sätta ord på vad varje övning tränar upp |
 

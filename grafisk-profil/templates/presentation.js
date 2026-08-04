@@ -62,7 +62,57 @@
   nextBtn && nextBtn.addEventListener("click", next);
   prevBtn && prevBtn.addEventListener("click", prev);
 
+  // Hoppa direkt till en slide via dess data-jump-attribut: skriv siffror, tryck Enter.
+  // Praktiskt när t.ex. spelare ropar ut ett kortnummer under en redovisning.
+  const jumpTargets = new Map();
+  slides.forEach((slide, i) => {
+    const jump = slide.dataset.jump;
+    if (jump) jumpTargets.set(String(Number(jump)), i);
+  });
+
+  let jumpBuffer = "";
+  let jumpTimer = null;
+  let jumpBadge = null;
+
+  function showJumpBadge() {
+    if (!jumpBadge) {
+      jumpBadge = document.createElement("div");
+      jumpBadge.className = "jump-badge";
+      deck.appendChild(jumpBadge);
+    }
+    jumpBadge.textContent = "Gå till #" + jumpBuffer;
+    jumpBadge.style.display = "block";
+  }
+
+  function resetJumpBuffer() {
+    jumpBuffer = "";
+    clearTimeout(jumpTimer);
+    if (jumpBadge) jumpBadge.style.display = "none";
+  }
+
+  function commitJump() {
+    const target = jumpTargets.get(String(Number(jumpBuffer)));
+    if (target !== undefined) goTo(target);
+    resetJumpBuffer();
+  }
+
   document.addEventListener("keydown", (e) => {
+    if (jumpTargets.size && e.key >= "0" && e.key <= "9") {
+      jumpBuffer += e.key;
+      showJumpBadge();
+      clearTimeout(jumpTimer);
+      jumpTimer = setTimeout(resetJumpBuffer, 2500);
+      return;
+    }
+    if (jumpBuffer && e.key === "Enter") {
+      e.preventDefault();
+      commitJump();
+      return;
+    }
+    if (jumpBuffer && e.key === "Escape") {
+      resetJumpBuffer();
+      return;
+    }
     if (["ArrowRight", "ArrowDown", " ", "PageDown"].includes(e.key)) {
       e.preventDefault();
       next();

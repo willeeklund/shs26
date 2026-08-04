@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<title>Syftet med övningen – övningskort</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: #e5e5e5;
+  }
+
+  .toolbar {
+    text-align: center;
+    padding: 14px;
+  }
+  .toolbar button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #1a1a1a;
+    color: white;
+    cursor: pointer;
+  }
+  .toolbar p {
+    max-width: 62ch;
+    margin: 8px auto 0;
+    color: #444;
+    font-size: 13px;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto 20px;
+    padding: 4mm;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* En enda streckad klipplinje mellan kvadranterna (inget dubbellinje/mellanrum) */
+  .quad {
+    position: relative;
+    overflow: hidden;
+  }
+  .quad:nth-child(1) { border-right: 1px dashed #bbb; border-bottom: 1px dashed #bbb; }
+  .quad:nth-child(2) { border-bottom: 1px dashed #bbb; }
+  .quad:nth-child(3) { border-right: 1px dashed #bbb; }
+
+  /* --- Framsida: bilden fyller kvadranten, inga extra marginaler --- */
+  .quad.front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+  .quad-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* --- Baksida: namn (en rad) + vad vi tränar (flera rader, fyller ytan) --- */
+  .quad.back {
+    display: flex;
+    flex-direction: column;
+    gap: 4mm;
+    padding: 6mm;
+  }
+  .mini-field label {
+    display: block;
+    font-size: 3.6mm;
+    font-weight: 700;
+    color: #221615;
+    margin-bottom: 2mm;
+  }
+  .mini-field.name {
+    flex: none;
+  }
+  .mini-field .mini-line {
+    display: block;
+    border-bottom: 0.4mm solid #999;
+    height: 10mm;
+  }
+  .mini-field.grow {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .mini-field.grow .mini-lines {
+    flex: 1;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 9.7mm,
+      #999 9.7mm,
+      #999 10mm
+    );
+  }
+
+  /* --- Litet kortnummer, för att kunna para ihop lösa kvadranter --- */
+  .quad-num {
+    position: absolute;
+    top: 1.5mm;
+    right: 2mm;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.3mm 1.5mm;
+    border-radius: 1mm;
+    font-size: 2.6mm;
+    color: #777;
+  }
+  .quad.back .quad-num {
+    position: static;
+    align-self: flex-end;
+    background: none;
+    padding: 0;
+    margin-bottom: -2mm;
+  }
+
+  @media print {
+    body { background: white; }
+    .toolbar { display: none; }
+    .page { box-shadow: none; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <button onclick="window.print()">Skriv ut</button>
+    <p>Skriv ut dubbelsidigt med "long-edge"-vändning (standard för stående dokument), klipp sedan
+       isär i 4 kvadranter per sida. Baksidan är avsiktligt spegelvänd vänster/höger i förhandsgranskningen -
+       det blir rätt först efter att pappret vänts fysiskt.</p>
+  </div>
+
+  <div class="page">
+      <div class="quad front">
+        <img class="quad-img" src="img/01-1-mot-1-anfall-forsvar.png" alt="Övningsritning" />
+        <span class="quad-num">#01</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/02-1-mot-1-styr-ut-efter-skridskoakning.png" alt="Övningsritning" />
+        <span class="quad-num">#02</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/03-1-mot-1-i-cirkel-med-andra-passare.png" alt="Övningsritning" />
+        <span class="quad-num">#03</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/04-1-mot-1-inledande-passning.png" alt="Övningsritning" />
+        <span class="quad-num">#04</span>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad back">
+        <span class="quad-num">#02</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#01</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#04</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#03</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad front">
+        <img class="quad-img" src="img/05-1-mot-1-liten-yta.png" alt="Övningsritning" />
+        <span class="quad-num">#05</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/06-1-mot-1-styrning.png" alt="Övningsritning" />
+        <span class="quad-num">#06</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/07-2-mot-2-byte-pa-signal.png" alt="Övningsritning" />
+        <span class="quad-num">#07</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/08-3-mot-3.png" alt="Övningsritning" />
+        <span class="quad-num">#08</span>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad back">
+        <span class="quad-num">#06</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#05</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#08</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#07</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad front">
+        <img class="quad-img" src="img/09-ak-passa-skjut.png" alt="Övningsritning" />
+        <span class="quad-num">#09</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/10-give-and-go-3-positioner.png" alt="Övningsritning" />
+        <span class="quad-num">#10</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/11-give-and-go-byt-position.png" alt="Övningsritning" />
+        <span class="quad-num">#11</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/12-give-and-go-passningar.png" alt="Övningsritning" />
+        <span class="quad-num">#12</span>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad back">
+        <span class="quad-num">#10</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#09</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#12</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#11</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad front">
+        <img class="quad-img" src="img/13-hall-pucken-inom-laget.png" alt="Övningsritning" />
+        <span class="quad-num">#13</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/14-hinderbana.png" alt="Övningsritning" />
+        <span class="quad-num">#14</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/15-passningar-ansiktet-mot-pucken.png" alt="Övningsritning" />
+        <span class="quad-num">#15</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/16-passningar-kontroll.png" alt="Övningsritning" />
+        <span class="quad-num">#16</span>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad back">
+        <span class="quad-num">#14</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#13</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#16</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#15</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad front">
+        <img class="quad-img" src="img/17-puck-kontroll-runt-dack.png" alt="Övningsritning" />
+        <span class="quad-num">#17</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/18-skridsko-tavling.png" alt="Övningsritning" />
+        <span class="quad-num">#18</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/19-skridskotavling-med-avslutande-skott.png" alt="Övningsritning" />
+        <span class="quad-num">#19</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/20-skridskotavling-runt-sarger.png" alt="Övningsritning" />
+        <span class="quad-num">#20</span>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad back">
+        <span class="quad-num">#18</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#17</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#20</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#19</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad front">
+        <img class="quad-img" src="img/21-spel-3-mot-3.png" alt="Övningsritning" />
+        <span class="quad-num">#21</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/22-spel-i-cirkel.png" alt="Övningsritning" />
+        <span class="quad-num">#22</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/23-spel-med-avlastande-coacher.png" alt="Övningsritning" />
+        <span class="quad-num">#23</span>
+      </div>
+      <div class="quad front">
+        <img class="quad-img" src="img/24-spel-med-avlastare-i-anfallszon.png" alt="Övningsritning" />
+        <span class="quad-num">#24</span>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad back">
+        <span class="quad-num">#22</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#21</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#24</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back">
+        <span class="quad-num">#23</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="quad front">
+        <img class="quad-img" src="img/25-teknik-med-puck-runt-koner.png" alt="Övningsritning" />
+        <span class="quad-num">#25</span>
+      </div>
+      <div class="quad front empty"></div>
+      <div class="quad front empty"></div>
+      <div class="quad front empty"></div>
+  </div>
+
+  <div class="page">
+      <div class="quad back empty"></div>
+      <div class="quad back">
+        <span class="quad-num">#25</span>
+        <div class="mini-field name">
+          <label>Namn på övningen</label>
+          <span class="mini-line"></span>
+        </div>
+        <div class="mini-field grow">
+          <label>Vad tränar vi? (skriv flera saker!)</label>
+          <div class="mini-lines"></div>
+        </div>
+      </div>
+      <div class="quad back empty"></div>
+      <div class="quad back empty"></div>
+  </div>
+</body>
+</html>

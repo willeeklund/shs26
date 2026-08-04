@@ -279,6 +279,22 @@ html, body {
   z-index: 20;
 }
 
+/* --- Hoppa till nummer (skriv siffror + Enter) --- */
+
+.jump-badge {
+  position: fixed;
+  bottom: 22px;
+  left: 26px;
+  background: var(--ik-red);
+  color: var(--ik-white);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  z-index: 30;
+  display: none;
+}
+
 @media (max-width: 700px) {
   .logo-corner {
     width: 44px;

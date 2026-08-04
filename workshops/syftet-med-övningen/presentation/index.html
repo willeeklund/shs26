@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syftet med övningen – IK Göta</title>
+  <link rel="stylesheet" href="../../../grafisk-profil/templates/presentation.css" />
+  <link rel="icon" href="../../../grafisk-profil/logga.png" />
+  <style>
+    /* Kompakt 3-kolumnslista för de 9 vanliga sakerna man tränar - specifik för denna presentation */
+    .keyword-grid {
+      list-style: none;
+      margin: 0.8em 0 0 0;
+      padding: 0;
+      columns: 3;
+      column-gap: 3vw;
+      max-width: 80ch;
+      text-align: left;
+    }
+
+    .keyword-grid li {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      font-size: clamp(0.9rem, 1.7vw, 1.2rem);
+      margin-bottom: 0.7em;
+      break-inside: avoid;
+    }
+
+    .keyword-grid .icon {
+      flex: none;
+      font-size: 1.3em;
+    }
+
+    /* Övningsbilder i slutet, en per övning - hoppa dit genom att skriva numret + Enter */
+    .exercise-num {
+      font-size: clamp(1.6rem, 4.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--ik-red);
+      margin-bottom: 0.3em;
+    }
+
+    .exercise-frame {
+      flex: 1;
+      width: 100%;
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .exercise-frame img {
+      max-width: 82vw;
+      max-height: 68vh;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <img class="logo-corner" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+
+    <!-- 1: Omslag -->
+    <section class="slide slide-red active">
+      <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+      <div class="eyebrow">IK Göta</div>
+      <h1>Syftet med övningen</h1>
+      <p class="lead">Bli en övningsdetektiv! 🕵️</p>
+    </section>
+
+    <!-- 2: Hook-fråga -->
+    <section class="slide">
+      <div class="eyebrow">Fundera på det här</div>
+      <h2>Vet du VARFÖR vi gör varje övning?</h2>
+      <p class="lead">Idag tar vi reda på det!</p>
+    </section>
+
+    <!-- 3: Uppdraget -->
+    <section class="slide">
+      <h2>Varje övning har en hemlighet</h2>
+      <p class="lead">Vad tränar den egentligen upp? Ni ska lösa gåtan! 🔍</p>
+    </section>
+
+    <!-- 4: Så funkar det -->
+    <section class="slide">
+      <h2>Så funkar det</h2>
+      <ul class="steps">
+        <li><span class="num">1</span> Dela in i smågrupper</li>
+        <li><span class="num">2</span> Varje grupp får 2-3 övningskort</li>
+        <li><span class="num">3</span> Lös gåtan tillsammans - vad tränar övningen?</li>
+        <li><span class="num">4</span> Skriv ett eget häftigt namn på baksidan</li>
+      </ul>
+    </section>
+
+    <!-- 5: Vad kan man träna? -->
+    <section class="slide">
+      <div class="eyebrow">Vanliga saker att öva på</div>
+      <h2>Vad kan en övning träna upp?</h2>
+      <ul class="keyword-grid">
+        <li><span class="icon">⛸️</span> Skridskoåkning</li>
+        <li><span class="icon">🏒</span> Klubbhantering</li>
+        <li><span class="icon">🔁</span> Passningar</li>
+        <li><span class="icon">👀</span> Titta upp</li>
+        <li><span class="icon">🏃</span> 1 mot 1 anfall</li>
+        <li><span class="icon">🛡️</span> 1 mot 1 försvar</li>
+        <li><span class="icon">🥅</span> Avslut</li>
+        <li><span class="icon">🤝</span> Samarbete</li>
+        <li><span class="icon">🧠</span> Speluppfattning</li>
+      </ul>
+    </section>
+
+    <!-- 6: Kör fast -->
+    <section class="slide">
+      <div class="eyebrow">Kör fast?</div>
+      <h2>Fundera på det här</h2>
+      <div class="card-grid">
+        <div class="card"><span class="icon">👀</span><span class="label">Vad gör spelaren?</span></div>
+        <div class="card"><span class="icon">🥅</span><span class="label">När har du nytta av det i match?</span></div>
+        <div class="card"><span class="icon">💪</span><span class="label">Vad är svårast?</span></div>
+      </div>
+    </section>
+
+    <!-- 7: Redovisning -->
+    <section class="slide">
+      <h2>Nu visar vi upp!</h2>
+      <p class="lead">Berätta namnet ni hittat på, vad ni tror man tränar - och vilket NUMMER övningen har! 🎤🔢</p>
+    </section>
+
+    <!-- Övningsbilder #01-#25: skriv numret + Enter för att hoppa hit under redovisningen -->
+    <!-- Övning #01 -->
+    <section class="slide" data-jump="1">
+      <div class="exercise-num">#01</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/01-1-mot-1-anfall-forsvar.png" alt="Övning 1" />
+      </div>
+    </section>
+
+    <!-- Övning #02 -->
+    <section class="slide" data-jump="2">
+      <div class="exercise-num">#02</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/02-1-mot-1-styr-ut-efter-skridskoakning.png" alt="Övning 2" />
+      </div>
+    </section>
+
+    <!-- Övning #03 -->
+    <section class="slide" data-jump="3">
+      <div class="exercise-num">#03</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/03-1-mot-1-i-cirkel-med-andra-passare.png" alt="Övning 3" />
+      </div>
+    </section>
+
+    <!-- Övning #04 -->
+    <section class="slide" data-jump="4">
+      <div class="exercise-num">#04</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/04-1-mot-1-inledande-passning.png" alt="Övning 4" />
+      </div>
+    </section>
+
+    <!-- Övning #05 -->
+    <section class="slide" data-jump="5">
+      <div class="exercise-num">#05</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/05-1-mot-1-liten-yta.png" alt="Övning 5" />
+      </div>
+    </section>
+
+    <!-- Övning #06 -->
+    <section class="slide" data-jump="6">
+      <div class="exercise-num">#06</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/06-1-mot-1-styrning.png" alt="Övning 6" />
+      </div>
+    </section>
+
+    <!-- Övning #07 -->
+    <section class="slide" data-jump="7">
+      <div class="exercise-num">#07</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/07-2-mot-2-byte-pa-signal.png" alt="Övning 7" />
+      </div>
+    </section>
+
+    <!-- Övning #08 -->
+    <section class="slide" data-jump="8">
+      <div class="exercise-num">#08</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/08-3-mot-3.png" alt="Övning 8" />
+      </div>
+    </section>
+
+    <!-- Övning #09 -->
+    <section class="slide" data-jump="9">
+      <div class="exercise-num">#09</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/09-ak-passa-skjut.png" alt="Övning 9" />
+      </div>
+    </section>
+
+    <!-- Övning #10 -->
+    <section class="slide" data-jump="10">
+      <div class="exercise-num">#10</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/10-give-and-go-3-positioner.png" alt="Övning 10" />
+      </div>
+    </section>
+
+    <!-- Övning #11 -->
+    <section class="slide" data-jump="11">
+      <div class="exercise-num">#11</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/11-give-and-go-byt-position.png" alt="Övning 11" />
+      </div>
+    </section>
+
+    <!-- Övning #12 -->
+    <section class="slide" data-jump="12">
+      <div class="exercise-num">#12</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/12-give-and-go-passningar.png" alt="Övning 12" />
+      </div>
+    </section>
+
+    <!-- Övning #13 -->
+    <section class="slide" data-jump="13">
+      <div class="exercise-num">#13</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/13-hall-pucken-inom-laget.png" alt="Övning 13" />
+      </div>
+    </section>
+
+    <!-- Övning #14 -->
+    <section class="slide" data-jump="14">
+      <div class="exercise-num">#14</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/14-hinderbana.png" alt="Övning 14" />
+      </div>
+    </section>
+
+    <!-- Övning #15 -->
+    <section class="slide" data-jump="15">
+      <div class="exercise-num">#15</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/15-passningar-ansiktet-mot-pucken.png" alt="Övning 15" />
+      </div>
+    </section>
+
+    <!-- Övning #16 -->
+    <section class="slide" data-jump="16">
+      <div class="exercise-num">#16</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/16-passningar-kontroll.png" alt="Övning 16" />
+      </div>
+    </section>
+
+    <!-- Övning #17 -->
+    <section class="slide" data-jump="17">
+      <div class="exercise-num">#17</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/17-puck-kontroll-runt-dack.png" alt="Övning 17" />
+      </div>
+    </section>
+
+    <!-- Övning #18 -->
+    <section class="slide" data-jump="18">
+      <div class="exercise-num">#18</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/18-skridsko-tavling.png" alt="Övning 18" />
+      </div>
+    </section>
+
+    <!-- Övning #19 -->
+    <section class="slide" data-jump="19">
+      <div class="exercise-num">#19</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/19-skridskotavling-med-avslutande-skott.png" alt="Övning 19" />
+      </div>
+    </section>
+
+    <!-- Övning #20 -->
+    <section class="slide" data-jump="20">
+      <div class="exercise-num">#20</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/20-skridskotavling-runt-sarger.png" alt="Övning 20" />
+      </div>
+    </section>
+
+    <!-- Övning #21 -->
+    <section class="slide" data-jump="21">
+      <div class="exercise-num">#21</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/21-spel-3-mot-3.png" alt="Övning 21" />
+      </div>
+    </section>
+
+    <!-- Övning #22 -->
+    <section class="slide" data-jump="22">
+      <div class="exercise-num">#22</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/22-spel-i-cirkel.png" alt="Övning 22" />
+      </div>
+    </section>
+
+    <!-- Övning #23 -->
+    <section class="slide" data-jump="23">
+      <div class="exercise-num">#23</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/23-spel-med-avlastande-coacher.png" alt="Övning 23" />
+      </div>
+    </section>
+
+    <!-- Övning #24 -->
+    <section class="slide" data-jump="24">
+      <div class="exercise-num">#24</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/24-spel-med-avlastare-i-anfallszon.png" alt="Övning 24" />
+      </div>
+    </section>
+
+    <!-- Övning #25 -->
+    <section class="slide" data-jump="25">
+      <div class="exercise-num">#25</div>
+      <div class="exercise-frame">
+        <img src="../ovningskort/img/25-teknik-med-puck-runt-koner.png" alt="Övning 25" />
+      </div>
+    </section>
+
+    <!-- Avslutning -->
+    <section class="slide slide-red">
+      <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+      <h1>Nu kör vi!</h1>
+    </section>
+
+    <div class="nav-controls">
+      <button class="nav-btn nav-prev" aria-label="Föregående">‹</button>
+      <div class="dots"></div>
+      <button class="nav-btn nav-next" aria-label="Nästa">›</button>
+    </div>
+    <div class="slide-counter"></div>
+  </div>
+  <script src="../../../grafisk-profil/templates/presentation.js"></script>
+</body>
+</html>
