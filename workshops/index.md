@@ -10,7 +10,7 @@ Varje workshop har en `index.md` fil som innehåller basen för materialet. Base
 
 | Workshop | Presentation | Stödmaterial |
 |---|---|---|
-| [Varför spelar vi ishockey?](why-we-play/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/why-we-play/presentation/) | – |
+| [Varför spelar vi ishockey?](why-we-play/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/why-we-play/presentation/) | [Lappar till rangordningsövning](why-we-play/print/index.html) |
 | [Spelförståelse](spelforstaelse/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/spelforstaelse/presentation/) | [Uppdragskort (QR + frågor)](spelforstaelse/uppdragskort/uppdragskort.pdf) |
 | [Hur vill du uppfattas?](hur-vill-du-uppfattas/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/hur-vill-du-uppfattas/presentation/) | [Situationskort](hur-vill-du-uppfattas/situationskort/situationskort.pdf) |
 

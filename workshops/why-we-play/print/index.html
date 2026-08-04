@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Anledningar att spela ishockey — lappar för utskrift</title>
+<style>
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #e5e5e5;
+  }
+
+  .toolbar {
+    text-align: center;
+    padding: 16px;
+  }
+
+  .toolbar button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #1a1a1a;
+    color: white;
+    cursor: pointer;
+  }
+
+  .sheet {
+    width: 190mm;
+    height: 277mm;
+    margin: 0 auto 24px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .slip {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 12mm;
+    border-bottom: 2px dashed #aaa;
+    font-size: 25pt;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  .slip:last-child {
+    border-bottom: none;
+  }
+
+  @media print {
+    body { background: white; }
+    .toolbar { display: none; }
+    .sheet { box-shadow: none; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <button onclick="window.print()">Skriv ut</button>
+  </div>
+
+  <div class="sheet">
+    <div class="slip">Träningarna i sig</div>
+    <div class="slip">Troféer, medaljer och prylar</div>
+    <div class="slip">Göra sitt bästa</div>
+    <div class="slip">Lagets ritualer och traditioner</div>
+    <div class="slip">Bra tränare som bryr sig om oss</div>
+    <div class="slip">Kul känsla, må bra</div>
+    <div class="slip">Utvecklas och lära sig nytt</div>
+    <div class="slip">Stöd från föräldrar och tränare under match</div>
+    <div class="slip">Bra laganda</div>
+    <div class="slip">Matcherna i sig</div>
+    <div class="slip">Lagkompisar och vänskap i laget</div>
+  </div>
+
+</body>
+</html>

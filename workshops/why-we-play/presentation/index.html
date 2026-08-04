@@ -6,6 +6,45 @@
   <title>Varför spelar vi hockey? – IK Göta</title>
   <link rel="stylesheet" href="../../../grafisk-profil/templates/presentation.css" />
   <link rel="icon" href="../../../grafisk-profil/logga.png" />
+  <style>
+    /* Rangordnad lista för 11 anledningar - specifik för denna presentation */
+    .rank-list {
+      list-style: none;
+      margin: 0.8em 0 0 0;
+      padding: 0;
+      columns: 2;
+      column-gap: 4vw;
+      max-width: 72ch;
+      text-align: left;
+    }
+
+    .rank-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.6em;
+      font-size: clamp(0.9rem, 1.9vw, 1.3rem);
+      margin-bottom: 0.55em;
+      break-inside: avoid;
+    }
+
+    .rank-list .num {
+      flex: none;
+      width: 1.6em;
+      height: 1.6em;
+      border-radius: 50%;
+      background: var(--ik-red);
+      color: var(--ik-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8em;
+    }
+
+    .rank-list li:nth-child(-n+3) .num {
+      background: var(--ik-gold);
+    }
+  </style>
 </head>
 <body>
   <div class="deck">
@@ -32,47 +71,66 @@
       <h2>Dags för en övning!</h2>
       <ul class="steps">
         <li><span class="num">1</span> Dela in i smågrupper</li>
-        <li><span class="num">2</span> Rangordna vad som är roligast</li>
-        <li><span class="num">3</span> Berätta för hela laget</li>
+        <li><span class="num">2</span> Varje grupp får 11 lappar - rangordna dem tillsammans</li>
+        <li><span class="num">3</span> Välj ut er topp 3</li>
       </ul>
     </section>
 
-    <!-- 4: Gör mer av det -->
+    <!-- 4: Grupperna berättar sin topp 3 -->
     <section class="slide">
-      <h2>Nu gör vi något åt det!</h2>
-      <p class="lead">Vad kan VI göra på träningar och matcher för att få mer av det roligaste?</p>
+      <div class="eyebrow">Dags att berätta</div>
+      <h2>Vilka är ERA topp 3?</h2>
+      <p class="lead">Varje grupp berättar sina 3 mest omtyckta anledningar 🥇🥈🥉</p>
     </section>
 
-    <!-- 5: Tre saker som gör hockey roligare -->
+    <!-- 5: Resultatet från undersökningen -->
     <section class="slide">
-      <h2>Det här gör hockey roligare</h2>
-      <div class="card-grid">
-        <div class="card"><span class="icon">💪</span><span class="label">Göra sitt bästa</span></div>
-        <div class="card"><span class="icon">🤝</span><span class="label">Bra lagkompisar</span></div>
-        <div class="card"><span class="icon">🧑‍🏫</span><span class="label">Tränare som bryr sig</span></div>
-      </div>
+      <div class="eyebrow">Över 300 barn och ungdomar svarade</div>
+      <h2>Så svarade riktiga hockeyspelare</h2>
+      <ul class="rank-list">
+        <li><span class="num">1</span> Göra sitt bästa</li>
+        <li><span class="num">2</span> Bra laganda</li>
+        <li><span class="num">3</span> Bra tränare som bryr sig om oss</li>
+        <li><span class="num">4</span> Utvecklas och lära sig nytt</li>
+        <li><span class="num">5</span> Matcherna i sig</li>
+        <li><span class="num">6</span> Träningarna i sig</li>
+        <li><span class="num">7</span> Lagkompisar och vänskap i laget</li>
+        <li><span class="num">8</span> Kul känsla, må bra</li>
+        <li><span class="num">9</span> Stöd från föräldrar och tränare under match</li>
+        <li><span class="num">10</span> Lagets ritualer och traditioner</li>
+        <li><span class="num">11</span> Troféer, medaljer och prylar</li>
+      </ul>
     </section>
 
-    <!-- 6: Motivation intro -->
+    <!-- 6: Gör mer av det -->
+    <section class="slide">
+      <h2>Vi vill göra det så roligt vi kan!</h2>
+      <p class="lead">Vi tränare göra mer av det ni gillar bäst.<br /><br />Kommer ni på något vi kan göra annorlunda - säg gärna till oss!</p>
+    </section>
+
+    <!-- 7: Blank paus-slide -->
+    <section class="slide"></section>
+
+    <!-- 8: Motivation intro -->
     <section class="slide">
       <div class="eyebrow">Nästa fråga</div>
       <h2>Vad får oss att VILJA träna?</h2>
       <p class="lead">Det finns två sorters krafter inuti oss</p>
     </section>
 
-    <!-- 7: Yttre motivation -->
+    <!-- 9: Yttre motivation -->
     <section class="slide">
       <h2>Måste-kraften 🏅</h2>
       <p class="lead">Kommer utifrån, t.ex. belöning eller beröm.<br />Funkar bara ett tag.</p>
     </section>
 
-    <!-- 8: Inre motivation -->
+    <!-- 10: Inre motivation -->
     <section class="slide slide-red">
       <h2>Vill-kraften 🔥</h2>
       <p class="lead">Kommer inifrån dig själv.<br />Du gör det för att det ÄR kul.<br />Håller i sig mycket längre!</p>
     </section>
 
-    <!-- 9: Tre saker som tänder Vill-kraften -->
+    <!-- 11: Tre saker som tänder Vill-kraften -->
     <section class="slide">
       <h2>Så tänder du Vill-kraften</h2>
       <div class="card-grid">
@@ -82,17 +140,31 @@
       </div>
     </section>
 
-    <!-- 10: Lagets varför -->
+    <!-- 12: Bli bättre, utvecklat -->
     <section class="slide">
-      <div class="eyebrow">Tillsammans</div>
-      <h2>Vårt lags Varför</h2>
-      <p class="lead">Nu ska vi hitta VÅRT svar på varför vi spelar hockey</p>
+      <div class="eyebrow">Vill-kraften, del 1</div>
+      <h2>📈 Bli bättre</h2>
+      <p class="lead">Kommer ni ihåg listan? "Göra sitt bästa" var nummer 1 och "Utvecklas och lära sig nytt" var nummer 4.<br />Känslan av att bli bättre är en av de starkaste krafterna som finns!</p>
     </section>
 
-    <!-- 11: Avslutning -->
+    <!-- 13: Bestämma själv, utvecklat -->
+    <section class="slide">
+      <div class="eyebrow">Vill-kraften, del 2</div>
+      <h2>🧭 Bestämma själv</h2>
+      <p class="lead">Till exempel: få välja uppvärmningslek, välja musik i omklädningsrummet, eller rösta om sista övningen på träningen.<br />När NI får vara med och bestämma känns det roligare!</p>
+    </section>
+
+    <!-- 14: Höra till laget, utvecklat -->
+    <section class="slide">
+      <div class="eyebrow">Vill-kraften, del 3</div>
+      <h2>❤️ Höra till laget</h2>
+      <p class="lead">Tre saker på listan handlar om just LAGET: "Bra laganda" (2), "Lagkompisar och vänskap" (7) och "Lagets ritualer" (10).<br />Att höra till och bry sig om varandra gör hockey roligare.</p>
+    </section>
+
+    <!-- 15: Avslutning -->
     <section class="slide slide-red">
       <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
-      <h1>Nu kör vi!</h1>
+      <h1>Team-16!❤️</h1>
     </section>
 
     <div class="nav-controls">
