@@ -1,5 +1,7 @@
 # Skills-competition
 
+🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/workshops/skills-competition/presentation/)
+
 Se din personliga utveckling under året!
 
 Vi gör en skills-competition denna veckan.
