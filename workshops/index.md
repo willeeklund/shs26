@@ -21,5 +21,5 @@ Varje workshop har en `index.md` fil som innehåller basen för materialet. Base
 
 | Workshop | Om passet |
 |---|---|
-| [Fysträning](fysträning/index.md) | Fysisk träning utanför isen som gör dig till en bättre hockeyspelare |
+| [Fysträning](fys/index.md) | Fysisk träning utanför isen som gör dig till en bättre hockeyspelare |
 

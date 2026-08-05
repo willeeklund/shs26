@@ -36,6 +36,7 @@ Detta genomsyrar allt vi skapar: vi jobbar tillsammans för att UPPTÄCKA och L�
 ## Språk och text
 - Dubbelkolla syftningar så det är entydigt vem som gör vad (t.ex. "en försvarare är mellan dig och pucken" - inte "mellan pucken och en försvarare", som är tvetydigt om perspektivet inte är glasklart).
 - Undvik löpande numrering i listor som kräver manuellt underhåll varje gång något läggs till/tas bort - använd punktlistor om den exakta ordningen inte har betydelse.
+- Texterna ska bara representera nuläget, inte historiken med hur vi kom dit. Skriv inte kommentarer/förklaringar av typen "bytte X mot Y eftersom..." eller "tog bort Z för att..." - beskriv bara det som gäller nu.
 
 ## Git
 - Committa eller pusha ALDRIG själv - lämna ändringar redo för användaren att granska och committa. Detta gäller alltid, oavsett vad som verkar bekvämt för stunden.
