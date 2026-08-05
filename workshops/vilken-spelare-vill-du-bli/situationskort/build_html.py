@@ -18,7 +18,7 @@ situations = [
     {"category": "isen", "text": "En lagkompis blir arg och skäller på en annan lagkompis efter ett misstag. Vad gör du?"},
     {"category": "isen", "text": "Ni vinner stort och matchen är i praktiken redan avgjord. Hur väljer du att spela sista minuterna?"},
     {"category": "isen", "text": "Du blir hårt tacklad (helt inom reglerna) och det gör ont. Hur reagerar du?"},
-    {"category": "isen", "text": "Tränaren byter ut dig mitt i en period du kände dig riktigt bra. Vad gör du på bänken?"},
+    {"category": "isen", "text": "Du har varit ute på isen genom flera anfall och börjar bli trött. Just då får du pucken - vad gör du?"},
     {"category": "isen", "text": "En motståndare retas eller är taskig mot dig. Hur reagerar du?"},
     # --- Rita-situationer (på isen) ---
     {
@@ -62,7 +62,7 @@ situations = [
     {"category": "utanfor", "text": "Du ser att en lagkompis blir retad av någon annan i skolan. Vad gör du?"},
     {"category": "utanfor", "text": "En förälder ropar väldigt högt från läktaren och det känns jobbigt för spelaren det gäller. Hur pratar ni om det i laget?"},
     {"category": "utanfor", "text": "Du är inte alls sugen på att göra styrke- eller konditionsövningar (off-ice) en viss dag. Hur märks det på dig?"},
-    {"category": "utanfor", "text": "Ni kör landträning och övningen känns tråkig eller för lätt. Hur visar du att du ändå är med fullt ut?"},
+    {"category": "utanfor", "text": "Ni kör off-ice och övningen känns tråkig eller för lätt. Hur visar du att du ändå är med fullt ut?"},
 ]
 
 CATEGORY_LABEL = {

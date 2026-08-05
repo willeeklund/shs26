@@ -113,11 +113,11 @@ Den andra vägen in: börja i matchsituationen och fråga "vilken övning hjälp
 - **Övningar som hjälper:** Björngång
 - **Varför:** Björngång tränar precis övergången mellan att vara nära golvet/isen och snabbt komma upp i en stabil position - samma rörelsemönster som att resa sig efter ett fall.
 
-### 6. Sidledskraft och riktningsförändringar längs kanten
-- **Vad händer:** En spelare byter riktning snabbt längs kanten för att komma loss från en motståndare eller följa pucken.
-- **Fråga till gruppen:** Vad krävs för att kunna trycka ifrån hårt åt sidan utan att tappa balansen?
+### 6. Sidledsförflyttning när man dribblar
+- **Vad händer:** En spelare dribblar längs kanten och byter riktning snabbt för att ta sig förbi en motståndare.
+- **Fråga till gruppen:** Vad krävs för att kunna trycka ifrån hårt åt sidan utan att tappa kontrollen över pucken?
 - **Övningar som hjälper:** Skridskohopp
-- **Varför:** Skridskohopp tränar precis den sidledsförflyttningen och kraften i varje skär - samma rörelse som en riktningsförändring på skridskor.
+- **Varför:** Skridskohopp tränar precis den sidledsförflyttningen och kraften i varje skär - samma rörelse som att byta riktning med pucken på klubban.
 
 ## Workshop istället för föreläsning ✏️
 Barnen ska själva ge övningar roliga namn, para ihop övningar med matchsituationer, hitta på egna övningar, argumentera och rösta - inte lyssna på en lång genomgång.

@@ -15,7 +15,7 @@ Varje workshop har en `index.md` fil som innehåller basen för materialet. Base
 | [Spelförståelse](spelforstaelse/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/spelforstaelse/presentation/) | [Uppdragskort (QR + frågor)](spelforstaelse/uppdragskort/uppdragskort.pdf) |
 | [Rita taktik](rita-taktik/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/rita-taktik/presentation/) | [Rinkmallar att skriva ut](rita-taktik/rinkmallar/rinkmallar.html) |
 | [Syftet med övningen](syftet-med-övningen/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/syftet-med-övningen/presentation/) | [Övningskort att skriva ut dubbelsidigt](syftet-med-övningen/ovningskort/ovningskort.html) |
-| [Vilken spelare vill du bli?](vilken-spelare-vill-du-bli/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/vilken-spelare-vill-du-bli/presentation/) | [Situationskort](vilken-spelare-vill-du-bli/situationskort/situationskort.pdf) |
+| [Vilken spelare vill du bli?](vilken-spelare-vill-du-bli/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/vilken-spelare-vill-du-bli/presentation/) | [Situationskort](vilken-spelare-vill-du-bli/situationskort/situationskort.html) |
 
 ## Under arbete (ingen presentation ännu)
 

@@ -3,7 +3,7 @@ En workshop om att skapa bra beteenden i laget.
 
 🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/workshops/vilken-spelare-vill-du-bli/presentation/)
 
-📋 **Stödmaterial:** [situationskort.pdf](situationskort/situationskort.pdf) (24 situationskort, skrivs ut och klipps isär)
+📋 **Stödmaterial:** [situationskort.html](situationskort/situationskort.html) (24 situationskort, skrivs ut och klipps isär)
 
 - Vilken spelare och lagkompis vill du vara om ett par år? Det avgörs av vanorna du bygger nu - inte av en enskild dag.
 - Hur vill jag bli uppfattad av mina lagkamrater och som hockeyspelare?
@@ -80,7 +80,7 @@ Poängen: dessa är alla saker man kan SE någon göra. Inte "vara snäll" eller
 - Tävlar mot sig själv - försöker bli lite bättre än igår, inte bara bättre än kompisen
 
 ## Material
-- Situationskorten nedan, utskrivna och klippta (ett kort per lapp) - se ["situationskort/situationskort.pdf"](situationskort/situationskort.pdf), eller läs upp dem högt om ni inte hunnit skriva ut
+- Situationskorten nedan, utskrivna och klippta (ett kort per lapp) - se ["situationskort/situationskort.html"](situationskort/situationskort.html), eller läs upp dem högt om ni inte hunnit skriva ut
 - Papper och penna till varje grupp (för att komma ihåg sitt bästa svar, och för rit-kortet)
 
 ## Upplägg (ca 25-30 min) - hur vill DU uppfattas?
@@ -129,7 +129,7 @@ Poängen: dessa är alla saker man kan SE någon göra. Inte "vara snäll" eller
 - Koppla ihop med ["Syftet med övningen"](../syftet-med-övningen/index.md): samma idé här - laget kommer på sina egna svar istället för att bara höra tränaren berätta
 
 ## TODO
-- [ ] Skriv ut `situationskort/situationskort.pdf` och klipp isär korten
+- [ ] Skriv ut `situationskort/situationskort.html` och klipp isär korten
 - [ ] Bestäm gruppindelning i förväg (blandade nivåer/åldrar i varje grupp brukar fungera bra)
 - [ ] Ha papper och pennor redo - särskilt till grupperna som får ett rit-kort (5 st finns)
 - [ ] Förbered ett reflektionsblad per spelare till "3 olika serier" (eller låt dem skriva fritt på ett vanligt papper)
