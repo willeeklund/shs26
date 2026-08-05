@@ -10,6 +10,42 @@ En workshop om att skapa bra beteenden i laget.
 - "Du blir den typ av spelare som det du Gör". Det som syns ifrån läktaren!
 - Se ”Syfte-vision-mål” från Grundkursen.
 
+## Beteende vs egenskap - och varför det spelar roll
+Källa: utbildningsmaterial från Svenska Ishockeyförbundet (begreppen "beteende" och "egenskap", Sundel & Sundel). Nedan är det översatt till hur vi förklarar det för laget.
+
+**Vad är ett beteende?**
+Ett beteende är något du GÖR - något andra kan SE eller HÖRA dig göra just nu (t.ex. hälsa, hjälpa till, le, skjuta pucken). En egenskap är istället något du ÄR eller VERKAR vara (t.ex. "snäll", "duktig", "positiv") - något man ofta bara gissar sig till genom att titta på beteenden över tid.
+
+**Varför fokuserar vi på beteenden och inte egenskaper?**
+Kort version till laget (se presentationen):
+- 🎯 Du kan välja det SJÄLV, just nu - oavsett hur du känner dig inuti
+- ⚡ Det går att ändra redan imorgon - beteenden förändras mycket snabbare än egenskaper
+- 👀 Alla kan SE det - tydligt för hela laget, inget att gissa sig till
+
+Fullständig version (för dig som ledare, från utbildningsmaterialet):
+- Det underlättar kommunikationen - lättare att prata om en konkret handling än en vag egenskap
+- Det blir mätbart - man kan faktiskt se om det görs eller inte
+- Det är kontrollerbart - spelaren äger sitt eget beteende, till skillnad från en egenskap
+- Det blir hoppfullt - beteenden kan förändras relativt snabbt, medan egenskaper upplevs som mer permanenta
+- Beteenden förändrar tankar och känslor - att GÖRA något positivt får dig även att KÄNNA dig mer positiv, inte bara tvärtom
+
+**Övning: Är det en egenskap eller ett beteende?** (körs tidigt i presentationen)
+Jobba två och två. Fundera på varje ord/uttryck nedan: är det en EGENSKAP (vad man ÄR) eller ett BETEENDE (vad man GÖR, och som därför snabbt kan ändras)? "Vrider på huvudet" är med som ett extra exempel - ett konkret, enkelt beteende vi vill se mycket mer av (koll på isen).
+
+| Ord | Egenskap | Beteende |
+|---|---|---|
+| Målgörare | X | |
+| Tar avslut | | X |
+| Lojal | X | |
+| Tar initiativ | | X |
+| Pratar mycket | | X |
+| Ler mycket | | X |
+| Positiv | X | |
+| Arrogant | X | |
+| Hjälper till | | X |
+| Hälsar | | X |
+| Vrider på huvudet | | X |
+
 ## Mål med passet
 Man blir inte en bra lagkompis av att KÄNNA sig snäll - man blir det av vad man faktiskt GÖR. Sådant som andra kan SE. Det gäller på isen, men minst lika mycket utanför - i omklädningsrummet, i skolan, hemma.
 

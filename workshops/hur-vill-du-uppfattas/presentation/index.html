@@ -14,6 +14,39 @@
       border-radius: 16px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
     }
+
+    /* Ingen slide-animation mellan facit-stegen - annars ser det ryckigt ut
+       när nästan identiska tabeller glider in/ut för varje nytt kryss */
+    .slide.instant {
+      transition: none;
+    }
+
+    /* Facit-tabell för egenskap/beteende-övningen, samma format som originalbilden */
+    .facit-table {
+      border-collapse: collapse;
+      margin-top: 1em;
+      font-size: clamp(0.85rem, 1.8vw, 1.15rem);
+    }
+    .facit-table th,
+    .facit-table td {
+      padding: 0.35em 1.2em;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    .facit-table thead th {
+      color: var(--ik-red);
+      border-bottom: 2px solid var(--ik-red);
+      font-weight: 800;
+    }
+    .facit-table thead th:not(:first-child) {
+      text-align: center;
+    }
+    .facit-table td.mark {
+      text-align: center;
+      font-weight: 800;
+      color: var(--ik-red);
+      font-size: 1.1em;
+    }
   </style>
 </head>
 <body>
@@ -36,25 +69,323 @@
       <p class="lead">Ledtråd: det handlar inte om hur hårt du skjuter 🤔</p>
     </section>
 
-    <!-- 3: Kärnan -->
+    <!-- 3: Beteende vs egenskap -->
+    <section class="slide">
+      <h2>Beteende vs Egenskap</h2>
+      <div class="card-grid">
+        <div class="card"><span class="icon">🧠</span><span class="label">Egenskap = vad du ÄR<br />("snäll", "duktig")</span></div>
+        <div class="card"><span class="icon">⚡</span><span class="label">Beteende = vad du GÖR<br />("hjälper till", "ler")</span></div>
+      </div>
+      <p class="lead">Idag pratar vi bara om det du GÖR - sånt andra kan SE 👀</p>
+    </section>
+
+    <!-- 4: Sorteringsövning - instruktion + facit (0/11, inga kryss än) -->
+    <section class="slide instant">
+      <div class="eyebrow">Jobba två och två</div>
+      <h2>Är det en EGENSKAP eller ett BETEENDE?</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Lojal</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Positiv</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+      <p class="lead">Diskutera tillsammans - vilka går att ÄNDRA snabbt?</p>
+    </section>
+
+    <!-- 5: Sorteringsövning - facit (1/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Lojal</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Positiv</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 6: Sorteringsövning - facit (2/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Lojal</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Positiv</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 7: Sorteringsövning - facit (3/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Lojal</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Positiv</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 8: Sorteringsövning - facit (4/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Lojal</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Positiv</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 9: Sorteringsövning - facit (5/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Lojal</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Positiv</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 10: Sorteringsövning - facit (6/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Lojal</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Positiv</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 11: Sorteringsövning - facit (7/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Lojal</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Positiv</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 12: Sorteringsövning - facit (8/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Lojal</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Positiv</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 13: Sorteringsövning - facit (9/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Lojal</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Positiv</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark"></td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 14: Sorteringsövning - facit (10/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Lojal</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Positiv</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 15: Sorteringsövning - facit (11/11) -->
+    <section class="slide instant">
+      <h2>Facit</h2>
+      <table class="facit-table">
+        <thead>
+          <tr><th>Ord</th><th>Egenskap</th><th>Beteende</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Målgörare</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar avslut</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Lojal</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Tar initiativ</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Pratar mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Ler mycket</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Positiv</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Arrogant</td><td class="mark">✖️</td><td class="mark"></td></tr>
+          <tr><td>Hjälper till</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Hälsar</td><td class="mark"></td><td class="mark">✖️</td></tr>
+          <tr><td>Vrider på huvudet</td><td class="mark"></td><td class="mark">✖️</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 16: Varför fokuserar vi på beteenden -->
+    <section class="slide">
+      <h2>Varför fokuserar vi på BETEENDEN?</h2>
+      <div class="card-grid">
+        <div class="card"><span class="icon">🎯</span><span class="label">Du kan välja det SJÄLV, just nu</span></div>
+        <div class="card"><span class="icon">⚡</span><span class="label">Går att ändra redan imorgon</span></div>
+        <div class="card"><span class="icon">👀</span><span class="label">Alla kan SE det - tydligt för laget</span></div>
+      </div>
+    </section>
+
+    <!-- 17: Kärnan -->
     <section class="slide">
       <h2>Du blir det du GÖR</h2>
       <p class="lead">Inte det du känner inuti - utan det andra kan SE dig göra 👀</p>
     </section>
 
-    <!-- 4: Beteende smittar -->
+    <!-- 18: Beteende smittar -->
     <section class="slide slide-red">
       <h2>Beteende smittar! 🦠</h2>
       <p class="lead">Klagar en - klagar snart alla.<br />Är en positiv - blir snart HELA laget positivt!</p>
     </section>
 
-    <!-- 5: Payoff -->
+    <!-- 19: Payoff -->
     <section class="slide">
       <h2>Lag där alla är positiva och sprider bra energi...</h2>
       <p class="lead">...är de lagen som vinner matcher! 🏆</p>
     </section>
 
-    <!-- 6: Bra lagkompis - exempel -->
+    <!-- 20: Bra lagkompis - exempel -->
     <section class="slide">
       <h2>Bra lagkompis - exempel</h2>
       <div class="card-grid">
@@ -64,7 +395,7 @@
       </div>
     </section>
 
-    <!-- 7: Bra hockeyspelare - exempel -->
+    <!-- 21: Bra hockeyspelare - exempel -->
     <section class="slide">
       <h2>Bra hockeyspelare - exempel</h2>
       <div class="card-grid">
@@ -74,21 +405,21 @@
       </div>
     </section>
 
-    <!-- 8: Dags att öva -->
+    <!-- 22: Dags att öva -->
     <section class="slide">
       <div class="eyebrow">Dags att öva!</div>
       <h2>Idag ska ni lösa riktiga situationer</h2>
       <p class="lead">Både på isen och utanför 🏒🏠</p>
     </section>
 
-    <!-- 9: Exempel - på isen (text) -->
+    <!-- 23: Exempel - på isen (text) -->
     <section class="slide">
       <div class="eyebrow">🏒 På isen</div>
       <h2>Din lagkompis missar ett öppet mål i en match.</h2>
       <p class="lead">Vad gör du?</p>
     </section>
 
-    <!-- 10: Exempel - på isen (rita) -->
+    <!-- 24: Exempel - på isen (rita) -->
     <section class="slide">
       <div class="eyebrow">🏒 På isen - rita!</div>
       <h2>Motståndarna tar pucken vid mittlinjen.</h2>
@@ -96,20 +427,20 @@
       <p class="lead">✏️ Vart åker DU i försvar?</p>
     </section>
 
-    <!-- 11: Exempel - utanför isen -->
+    <!-- 25: Exempel - utanför isen -->
     <section class="slide">
       <div class="eyebrow">🏠 Utanför isen</div>
       <h2>Ni åker till en bortamatch och en spelare sitter ensam.</h2>
       <p class="lead">Vad gör du?</p>
     </section>
 
-    <!-- 12: Workshop intro -->
+    <!-- 26: Workshop intro -->
     <section class="slide">
       <h2>Nu är det din tur!</h2>
       <p class="lead">Ni delas in i smågrupper och får egna situationskort</p>
     </section>
 
-    <!-- 13: Så går det till -->
+    <!-- 27: Så går det till -->
     <section class="slide">
       <h2>Så går det till</h2>
       <ul class="steps">
@@ -119,20 +450,20 @@
       </ul>
     </section>
 
-    <!-- 14: Sist idag - 3 olika serier -->
+    <!-- 28: Sist idag - 3 olika serier -->
     <section class="slide">
       <div class="eyebrow">Sist idag</div>
       <h2>Om 2 år finns det 3 nivåer av serier att spela i</h2>
       <p class="lead">Vilken vill DU spela i? 🤔</p>
     </section>
 
-    <!-- 15: Vad avgör vilken serie -->
+    <!-- 29: Vad avgör vilken serie -->
     <section class="slide">
       <h2>Vilken spelare du är då...</h2>
       <p class="lead">...beror på vad du GÖR varje vecka, hela vägen dit</p>
     </section>
 
-    <!-- 16: Individuell reflektion -->
+    <!-- 30: Individuell reflektion -->
     <section class="slide">
       <div class="eyebrow">Din tur - i tysthet ✏️</div>
       <h2>Skriv ner, bara för dig själv</h2>
@@ -143,13 +474,13 @@
       </ul>
     </section>
 
-    <!-- 17: Smitto-payoff -->
+    <!-- 31: Smitto-payoff -->
     <section class="slide">
       <h2>Ditt beteende smittar av sig</h2>
       <p class="lead">Välj att smitta laget med det bästa i dig! 🔥</p>
     </section>
 
-    <!-- 18: Avslutning -->
+    <!-- 32: Avslutning -->
     <section class="slide slide-red">
       <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
       <h1>Nu kör vi!</h1>
