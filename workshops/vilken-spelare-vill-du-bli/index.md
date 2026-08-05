@@ -1,10 +1,11 @@
-# Hur vill du uppfattas?
+# Vilken spelare vill du bli?
 En workshop om att skapa bra beteenden i laget.
 
-🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/workshops/hur-vill-du-uppfattas/presentation/)
+🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/workshops/vilken-spelare-vill-du-bli/presentation/)
 
 📋 **Stödmaterial:** [situationskort.pdf](situationskort/situationskort.pdf) (24 situationskort, skrivs ut och klipps isär)
 
+- Vilken spelare och lagkompis vill du vara om ett par år? Det avgörs av vanorna du bygger nu - inte av en enskild dag.
 - Hur vill jag bli uppfattad av mina lagkamrater och som hockeyspelare?
 - Fokusera på beteende, inte egenskaper.
 - "Du blir den typ av spelare som det du Gör". Det som syns ifrån läktaren!

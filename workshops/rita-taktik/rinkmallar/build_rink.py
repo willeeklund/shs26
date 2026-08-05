@@ -1,6 +1,6 @@
 """
 Genererar isbane-bilder for rita-taktik-stationerna. Samma ritstil som
-workshops/hur-vill-du-uppfattas/situationskort/build_rink.py.
+workshops/vilken-spelare-vill-du-bli/situationskort/build_rink.py.
 
 Anfallare = röda X. Försvarare = svarta O (samma betydelse genom hela
 passet, oavsett vilken station eller vilket lag spelarna representerar

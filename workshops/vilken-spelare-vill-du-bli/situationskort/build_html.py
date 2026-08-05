@@ -112,7 +112,7 @@ html = f"""<!DOCTYPE html>
 <html lang="sv">
 <head>
 <meta charset="UTF-8" />
-<title>Hur vill du uppfattas? - situationskort</title>
+<title>Vilken spelare vill du bli? - situationskort</title>
 <style>
   @page {{ size: A4; margin: 0; }}
   * {{ box-sizing: border-box; }}

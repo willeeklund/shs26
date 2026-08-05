@@ -12,7 +12,7 @@ Rita var pucken och spelarna borde vara för att det ska bli så bra som möjlig
 Cirkel = försvarare, Kryss = anfallare (samma hela passet, så alla hänger med).
 
 ## Material
-- Skriv ut [rinkmallar](rinkmallar/rinkmallar.html) - varje grupp får ETT paket med alla 9 scenarier (3 per station: lätt/medel/svår), 3 scenarier per A4-sida = 3 sidor per grupp. Samma ritstil som ["Hur vill du uppfattas?"](../hur-vill-du-uppfattas/situationskort/situationskort.html) använder för sina isbane-bilder. Varje scen har alltid 3 anfallare och 3 försvarare (vi spelar 3 mot 3) samt en målvakt i vardera målet, i rätt lagfärg
+- Skriv ut [rinkmallar](rinkmallar/rinkmallar.html) - varje grupp får ETT paket med alla 9 scenarier (3 per station: lätt/medel/svår), 3 scenarier per A4-sida = 3 sidor per grupp. Samma ritstil som ["Vilken spelare vill du bli?"](../vilken-spelare-vill-du-bli/situationskort/situationskort.html) använder för sina isbane-bilder. Varje scen har alltid 3 anfallare och 3 försvarare (vi spelar 3 mot 3) samt en målvakt i vardera målet, i rätt lagfärg
 - Pennor
 - Magneter i olika färger, en färg per lag (de som redan finns hemma räcker, se TODO)
 - Laminera gärna rink-mallarna så man kan rita med whiteboard-penna och sudda - då kan samma papper användas om och om igen
