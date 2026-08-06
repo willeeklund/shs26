@@ -53,17 +53,6 @@ Förbered gärna en liknande, konkret förklaring för varje övning ni kör - s
 
 Tips till tränaren: ha ett eget exempel klart för varje punkt - en matchsituation spelarna kan känna igen sig i.
 
-## Fysisk utveckling
-- Vi växer olika fort, fast vi är lika gamla
-
-![Olika fysisk utveckling hos lika gamla spelare](./olika-fysisk-utveckling-lika-gamla.png)
-
-- De här spelarna kanske blir lika långa när de blir stora.
-- Hur märks det just nu, på isen, att ni är olika stora och starka?
-
-- Olika sorters träning ger olika effekt vid olika ålder.
-
-![Effekt från olika fysiskt övningar vid olika ålder](./effekt-från-träningsformer.png)
 
 ## Hockeygym: en övning = en matchsituation 🏋️
 Grundidén: varje gymövning kopplas till **EN** tydlig matchsituation - inte flera på en gång, då blir det otydligt vad man faktiskt tränar. Vi kör med hela gruppen utan gymutrustning - bara det vi faktiskt har tillgång till: mjuk matta, bänkar i omklädningsrummet, puckar och teknikkulor.
@@ -247,6 +236,14 @@ Stå på ett ben med lätt böjt knä och hoppa explosivt i sidled till det andr
 ![Hela rörelsen: avstamp, glid i luften och handen ner mot marken vid landning](./bilder/ovning-skridskohopp-2.png)
 
 ![Sidoprofil av ett tydligt skridskohopp - frigjort ben bakåt, armarna i motsatt svep](./bilder/ovning-skridskohopp-3.webp)
+
+## Fysisk utveckling
+- Vi växer olika fort, fast vi är lika gamla
+
+![Olika fysisk utveckling hos lika gamla spelare](./olika-fysisk-utveckling-lika-gamla.png)
+
+- De här spelarna kanske blir lika långa när de blir stora.
+- Hur märks det just nu, på isen, att ni är olika stora och starka?
 
 ## Workshop istället för föreläsning ✏️
 Barnen ska själva ge övningar roliga namn, para ihop övningar med matchsituationer, hitta på egna övningar, argumentera och rösta - inte lyssna på en lång genomgång.

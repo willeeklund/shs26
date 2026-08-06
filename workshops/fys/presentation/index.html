@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fysträning – IK Göta</title>
+  <link rel="stylesheet" href="../../../grafisk-profil/templates/presentation.css" />
+  <link rel="icon" href="../../../grafisk-profil/logga.png" />
+  <style>
+    /* Ingen positionsindikator i denna presentation - navigering sker med piltangenter */
+    .progress-bar,
+    .dots,
+    .slide-counter {
+      display: none;
+    }
+
+    /* Bildram för enskilda bilder (t.ex. fysisk utveckling i slutet) */
+    .photo-frame {
+      flex: 1;
+      width: 100%;
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.6em;
+    }
+
+    .photo-frame img {
+      max-width: 78vw;
+      max-height: 54vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    /* Matchsituation-slides: bilderna tar HELA ytan, ingen annan text får plats */
+    .slide-gallery {
+      padding: 1.5vh 1.5vw;
+    }
+
+    .photo-gallery {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      display: grid;
+      grid-auto-rows: 1fr;
+      gap: 0.8vh 0.8vw;
+    }
+
+    .photo-gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Litet numrerat namn ovanpå bilderna - egen bakgrund så det syns oavsett foto */
+    .situation-badge {
+      position: absolute;
+      top: 3vh;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--ik-red);
+      color: var(--ik-white);
+      padding: 0.35em 1.1em;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: clamp(1rem, 2.1vw, 1.5rem);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      z-index: 5;
+      white-space: nowrap;
+    }
+
+    /* Förslag-slides: situationsbilden längst till vänster, en pil, sen en bild per övning */
+    .reveal-row {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      gap: 1.2vw;
+    }
+
+    .reveal-cell {
+      flex: 1;
+      height: 100%;
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .reveal-cell img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    .reveal-arrow {
+      flex: none;
+      font-size: clamp(2rem, 5vw, 4rem);
+      color: var(--ik-red);
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <img class="logo-corner" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+
+    <!-- 1: Omslag -->
+    <section class="slide slide-red active">
+      <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+      <div class="eyebrow">IK Göta</div>
+      <h1>Fysträning</h1>
+      <p class="lead">Bli en hockeydetektiv 🕵️</p>
+    </section>
+
+    <!-- 2: Uppdraget -->
+    <section class="slide">
+      <div class="eyebrow">Uppdraget</div>
+      <h2>Ni är hockeydetektiver! 🕵️</h2>
+      <p class="lead">Mysteriet: "Hur blir man bättre på hockey - utan skridskor?"</p>
+      <p class="lead">Ni får inte höra förslagen direkt - fundera själva först!</p>
+    </section>
+
+    <!-- 3: Tränarens roll -->
+    <section class="slide">
+      <div class="eyebrow">Kom ihåg</div>
+      <h2>Vi är samtalsledare, inte föreläsare</h2>
+      <p class="lead">Vi ställer frågor - ni kommer fram till svaren tillsammans!</p>
+    </section>
+
+    <!-- 4: Detektivmetoden -->
+    <section class="slide">
+      <h2>Detektivmetoden</h2>
+      <ul class="steps">
+        <li><span class="num">1</span> Titta noga på alla situationerna</li>
+        <li><span class="num">2</span> Diskutera i grupp - kroppsdelar &amp; egenskaper</li>
+        <li><span class="num">3</span> Föreslå en övning som skulle hjälpa</li>
+        <li><span class="num">4</span> Vi går igenom allihopa tillsammans</li>
+        <li><span class="num">5</span> Höra tränarens förslag på övningar</li>
+      </ul>
+    </section>
+
+    <!-- 5: Situation 1 - galleri -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">1 · Skydda pucken i hörnet</div>
+      <div class="photo-gallery" style="grid-template-columns: repeat(2, 1fr);">
+        <img src="../bilder/situation1-hornet-1.jpg" alt="Skydda pucken i hörnet, bild 1" />
+        <img src="../bilder/situation1-hornet-2.jpg" alt="Skydda pucken i hörnet, bild 2" />
+        <img src="../bilder/situation1-hornet-3.jpg" alt="Skydda pucken i hörnet, bild 3" />
+        <img src="../bilder/situation1-hornet-4.jpg" alt="Skydda pucken i hörnet, bild 4" />
+      </div>
+    </section>
+
+    <!-- 6: Situation 2 - galleri -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">2 · Första tre skären mot en lös puck</div>
+      <div class="photo-gallery" style="grid-template-columns: repeat(3, 1fr);">
+        <img src="../bilder/situation2-losPuck-1.png" alt="Första tre skären mot en lös puck, bild 1" />
+        <img src="../bilder/situation2-losPuck-2.jpg" alt="Första tre skären mot en lös puck, bild 2" />
+        <img src="../bilder/situation2-losPuck-3.jpg" alt="Första tre skären mot en lös puck, bild 3" />
+      </div>
+    </section>
+
+    <!-- 7: Situation 3 - galleri -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">3 · Orka spela i låg hockeyposition</div>
+      <div class="photo-gallery" style="grid-template-columns: repeat(3, 1fr);">
+        <img src="../bilder/situation3-lagPosition-1.png" alt="Orka spela i låg hockeyposition, bild 1" />
+        <img src="../bilder/situation3-lagPosition-2.png" alt="Orka spela i låg hockeyposition, bild 2" />
+        <img src="../bilder/situation3-lagPosition-3.jpg" alt="Orka spela i låg hockeyposition, bild 3" />
+      </div>
+    </section>
+
+    <!-- 8: Situation 4 - galleri -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">4 · Hårdare handledsskott</div>
+      <div class="photo-gallery" style="grid-template-columns: repeat(3, 1fr);">
+        <img src="../bilder/situation4-handledsskott-1.jpg" alt="Hårdare handledsskott, bild 1" />
+        <img src="../bilder/situation4-handledsskott-2.jpg" alt="Hårdare handledsskott, bild 2" />
+        <img src="../bilder/situation4-handledsskott-3.jpg" alt="Hårdare handledsskott, bild 3" />
+      </div>
+    </section>
+
+    <!-- 9: Situation 5 - galleri -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">5 · Komma upp snabbt efter ett fall</div>
+      <div class="photo-gallery" style="grid-template-columns: repeat(3, 1fr);">
+        <img src="../bilder/situation5-uppresning-1.jpg" alt="Komma upp snabbt efter ett fall, bild 1" />
+        <img src="../bilder/situation5-uppresning-2.jpg" alt="Komma upp snabbt efter ett fall, bild 2" />
+        <img src="../bilder/situation5-uppresning-3.png" alt="Komma upp snabbt efter ett fall, bild 3" />
+      </div>
+    </section>
+
+    <!-- 10: Situation 6 - galleri -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">6 · Sidledsförflyttning när man dribblar</div>
+      <div class="photo-gallery" style="grid-template-columns: repeat(2, 1fr);">
+        <img src="../bilder/situation6-sidled-1.jpg" alt="Sidledsförflyttning när man dribblar, bild 1" />
+        <img src="../bilder/situation6-sidled-2.jpg" alt="Sidledsförflyttning när man dribblar, bild 2" />
+      </div>
+    </section>
+
+    <!-- 11: Fem saker vi tränar på -->
+    <section class="slide">
+      <h2>Fem saker vi tränar på</h2>
+      <div class="card-grid">
+        <div class="card"><span class="icon">⚡</span><span class="label">Snabbhet</span></div>
+        <div class="card"><span class="icon">🤸</span><span class="label">Rörlighet</span></div>
+        <div class="card"><span class="icon">😤</span><span class="label">Uthållighet</span></div>
+      </div>
+      <div class="card-grid">
+        <div class="card"><span class="icon">💪</span><span class="label">Styrka</span></div>
+        <div class="card"><span class="icon">🎯</span><span class="label">Koordination</span></div>
+      </div>
+    </section>
+
+    <!-- 12: Nu jobbar vi i grupper -->
+    <section class="slide">
+      <h2>Nu jobbar vi i grupper!</h2>
+      <ul class="steps">
+        <li><span class="num">1</span> Ta era kort - en situation per grupp</li>
+        <li><span class="num">2</span> Vilka kroppsdelar är viktiga där?</li>
+        <li><span class="num">3</span> Vilka av de fem egenskaperna hjälper mest?</li>
+        <li><span class="num">4</span> Föreslå en övning - skriv på baksidan!</li>
+      </ul>
+    </section>
+
+    <!-- 13: Förslag på övningar - situation 1 -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">1 · Skydda pucken i hörnet</div>
+      <div class="reveal-row">
+        <div class="reveal-cell"><img src="../bilder/situation1-hornet-1.jpg" alt="Skydda pucken i hörnet" /></div>
+        <div class="reveal-arrow">←</div>
+        <div class="reveal-cell"><img src="../bilder/ovning-enbensRDL-1.jpg" alt="Enbens-RDL" /></div>
+      </div>
+    </section>
+
+    <!-- 14: Förslag på övningar - situation 2 -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">2 · Första tre skären mot en lös puck</div>
+      <div class="reveal-row">
+        <div class="reveal-cell"><img src="../bilder/situation2-losPuck-1.png" alt="Första tre skären mot en lös puck" /></div>
+        <div class="reveal-arrow">←</div>
+        <div class="reveal-cell"><img src="../bilder/ovning-boxJump-1.jpg" alt="Box Jump" /></div>
+        <div class="reveal-cell"><img src="../bilder/ovning-bulgarianSplitSquat-2.jpg" alt="Bulgarian Split Squat" /></div>
+      </div>
+    </section>
+
+    <!-- 15: Förslag på övningar - situation 3 -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">3 · Orka spela i låg hockeyposition</div>
+      <div class="reveal-row">
+        <div class="reveal-cell"><img src="../bilder/situation3-lagPosition-3.jpg" alt="Orka spela i låg hockeyposition" /></div>
+        <div class="reveal-arrow">←</div>
+        <div class="reveal-cell"><img src="../bilder/ovning-jagarstallning-1.jpg" alt="Jägarställning" /></div>
+      </div>
+    </section>
+
+    <!-- 16: Förslag på övningar - situation 4 -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">4 · Hårdare handledsskott</div>
+      <div class="reveal-row">
+        <div class="reveal-cell"><img src="../bilder/situation4-handledsskott-1.jpg" alt="Hårdare handledsskott" /></div>
+        <div class="reveal-arrow">←</div>
+        <div class="reveal-cell"><img src="../bilder/ovning-ryskVridning-2.jpg" alt="Rysk vridning" /></div>
+      </div>
+    </section>
+
+    <!-- 17: Förslag på övningar - situation 5 -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">5 · Komma upp snabbt efter ett fall</div>
+      <div class="reveal-row">
+        <div class="reveal-cell"><img src="../bilder/situation5-uppresning-1.jpg" alt="Komma upp snabbt efter ett fall" /></div>
+        <div class="reveal-arrow">←</div>
+        <div class="reveal-cell"><img src="../bilder/ovning-bjorngang-1.jpg" alt="Björngång" /></div>
+      </div>
+    </section>
+
+    <!-- 18: Förslag på övningar - situation 6 -->
+    <section class="slide slide-gallery">
+      <div class="situation-badge">6 · Sidledsförflyttning när man dribblar</div>
+      <div class="reveal-row">
+        <div class="reveal-cell"><img src="../bilder/situation6-sidled-1.jpg" alt="Sidledsförflyttning när man dribblar" /></div>
+        <div class="reveal-arrow">←</div>
+        <div class="reveal-cell"><img src="../bilder/ovning-skridskohopp-2.png" alt="Skridskohopp" /></div>
+      </div>
+    </section>
+    
+    <!-- Tom slide -->
+    <section class="slide"></section>
+
+    <!-- 19: Fysisk utveckling -->
+    <section class="slide">
+      <h2>Vi växer olika fort</h2>
+      <p class="lead">Fast ni är lika gamla.</p>
+      <p class="lead">Hur påverkar det spelet nu?</p>
+      <div class="photo-frame">
+        <img src="../olika-fysisk-utveckling-lika-gamla.png" alt="Olika fysisk utveckling hos lika gamla spelare" />
+      </div>
+    </section>
+
+
+    <!-- 21: Avslutning -->
+    <section class="slide slide-red">
+      <img class="logo-big" src="../../../grafisk-profil/logga.png" alt="IK Göta logga" />
+      <h1>Nu kör vi!</h1>
+    </section>
+
+    <div class="nav-controls">
+      <button class="nav-btn nav-prev" aria-label="Föregående">‹</button>
+      <div class="dots"></div>
+      <button class="nav-btn nav-next" aria-label="Nästa">›</button>
+    </div>
+    <div class="slide-counter"></div>
+  </div>
+  <script src="../../../grafisk-profil/templates/presentation.js"></script>
+</body>
+</html>
