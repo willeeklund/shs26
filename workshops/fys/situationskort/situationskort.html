@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<title>Fysträning – situationskort</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: #e5e5e5;
+  }
+
+  .toolbar {
+    text-align: center;
+    padding: 14px;
+  }
+  .toolbar button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #1a1a1a;
+    color: white;
+    cursor: pointer;
+  }
+  .toolbar p {
+    max-width: 62ch;
+    margin: 8px auto 0;
+    color: #444;
+    font-size: 13px;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto 20px;
+    padding: 4mm;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  .strip {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px dashed #bbb;
+  }
+  .strip:last-child { border-bottom: none; }
+
+  /* --- Framsida: EN bild per situation, fyller hela remsan --- */
+  .strip.front {
+    padding: 2mm;
+    display: flex;
+  }
+  .strip.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2mm;
+    display: block;
+  }
+  .situation-badge {
+    position: absolute;
+    top: 4mm;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #AF2924;
+    color: white;
+    padding: 1.2mm 4mm;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 3.4mm;
+    box-shadow: 0 1mm 2mm rgba(0, 0, 0, 0.35);
+    z-index: 5;
+    white-space: nowrap;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* --- Baksida: rubrik + tva ifyllningsfalt sida vid sida --- */
+  .strip.back {
+    display: flex;
+    flex-direction: column;
+    padding: 5mm 8mm;
+    gap: 3mm;
+  }
+  .back-badge {
+    flex: none;
+    font-weight: 700;
+    font-size: 4.2mm;
+    color: #AF2924;
+  }
+  .back-fields {
+    flex: 1;
+    display: flex;
+    gap: 8mm;
+    min-height: 0;
+  }
+  .mini-field label {
+    display: block;
+    font-size: 3.4mm;
+    font-weight: 700;
+    color: #221615;
+    margin-bottom: 2mm;
+  }
+  .mini-field.grow {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .mini-field.grow .mini-lines {
+    flex: 1;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 8.7mm,
+      #999 8.7mm,
+      #999 9mm
+    );
+  }
+
+  @media print {
+    body { background: white; }
+    .toolbar { display: none; }
+    .page { box-shadow: none; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <button onclick="window.print()">Skriv ut</button>
+    <p>Skriv ut dubbelsidigt med "long-edge"-vändning (standard för stående dokument), klipp sedan
+       isär i 3 remsor per sida - en situation per grupp.</p>
+  </div>
+
+  <div class="page">
+      <div class="strip front">
+        <div class="situation-badge">1 · Skydda pucken i hörnet</div>
+        <img src="../bilder/situation1-hornet-1.jpg" alt="Skydda pucken i hörnet" />
+      </div>
+      <div class="strip front">
+        <div class="situation-badge">2 · Första tre skären mot en lös puck</div>
+        <img src="../bilder/situation2-losPuck-1.png" alt="Första tre skären mot en lös puck" />
+      </div>
+      <div class="strip front">
+        <div class="situation-badge">3 · Orka spela i låg hockeyposition</div>
+        <img src="../bilder/situation3-lagPosition-3.jpg" alt="Orka spela i låg hockeyposition" />
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="strip back">
+        <div class="back-badge">1 · Skydda pucken i hörnet</div>
+        <div class="back-fields">
+          <div class="mini-field grow">
+            <label>Vilka kroppsdelar och egenskaper hjälper?</label>
+            <div class="mini-lines"></div>
+          </div>
+          <div class="mini-field grow">
+            <label>Förslag på övning</label>
+            <div class="mini-lines"></div>
+          </div>
+        </div>
+      </div>
+      <div class="strip back">
+        <div class="back-badge">2 · Första tre skären mot en lös puck</div>
+        <div class="back-fields">
+          <div class="mini-field grow">
+            <label>Vilka kroppsdelar och egenskaper hjälper?</label>
+            <div class="mini-lines"></div>
+          </div>
+          <div class="mini-field grow">
+            <label>Förslag på övning</label>
+            <div class="mini-lines"></div>
+          </div>
+        </div>
+      </div>
+      <div class="strip back">
+        <div class="back-badge">3 · Orka spela i låg hockeyposition</div>
+        <div class="back-fields">
+          <div class="mini-field grow">
+            <label>Vilka kroppsdelar och egenskaper hjälper?</label>
+            <div class="mini-lines"></div>
+          </div>
+          <div class="mini-field grow">
+            <label>Förslag på övning</label>
+            <div class="mini-lines"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="strip front">
+        <div class="situation-badge">4 · Hårdare handledsskott</div>
+        <img src="../bilder/situation4-handledsskott-1.jpg" alt="Hårdare handledsskott" />
+      </div>
+      <div class="strip front">
+        <div class="situation-badge">5 · Komma upp snabbt efter ett fall</div>
+        <img src="../bilder/situation5-uppresning-1.jpg" alt="Komma upp snabbt efter ett fall" />
+      </div>
+      <div class="strip front">
+        <div class="situation-badge">6 · Sidledsförflyttning när man dribblar</div>
+        <img src="../bilder/situation6-sidled-1.jpg" alt="Sidledsförflyttning när man dribblar" />
+      </div>
+  </div>
+
+  <div class="page">
+      <div class="strip back">
+        <div class="back-badge">4 · Hårdare handledsskott</div>
+        <div class="back-fields">
+          <div class="mini-field grow">
+            <label>Vilka kroppsdelar och egenskaper hjälper?</label>
+            <div class="mini-lines"></div>
+          </div>
+          <div class="mini-field grow">
+            <label>Förslag på övning</label>
+            <div class="mini-lines"></div>
+          </div>
+        </div>
+      </div>
+      <div class="strip back">
+        <div class="back-badge">5 · Komma upp snabbt efter ett fall</div>
+        <div class="back-fields">
+          <div class="mini-field grow">
+            <label>Vilka kroppsdelar och egenskaper hjälper?</label>
+            <div class="mini-lines"></div>
+          </div>
+          <div class="mini-field grow">
+            <label>Förslag på övning</label>
+            <div class="mini-lines"></div>
+          </div>
+        </div>
+      </div>
+      <div class="strip back">
+        <div class="back-badge">6 · Sidledsförflyttning när man dribblar</div>
+        <div class="back-fields">
+          <div class="mini-field grow">
+            <label>Vilka kroppsdelar och egenskaper hjälper?</label>
+            <div class="mini-lines"></div>
+          </div>
+          <div class="mini-field grow">
+            <label>Förslag på övning</label>
+            <div class="mini-lines"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

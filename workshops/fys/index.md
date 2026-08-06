@@ -1,5 +1,9 @@
 # Fysträning
 
+🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/workshops/fys/presentation/)
+
+📋 **Stödmaterial:** [situationskort.html](situationskort/situationskort.html) (skriv ut dubbelsidigt, klipp isär i 3 remsor per sida)
+
 ## Mål med passet
 Fysisk träning utanför isen som gör dig till en bättre hockeyspelare på isen.
 
