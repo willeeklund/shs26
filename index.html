@@ -86,9 +86,12 @@
   #content a {
     color: var(--ik-red);
     font-weight: 600;
+    text-decoration: none;
   }
-  #content a[href*="/presentation/"],
-  #content a[href$=".pdf"] {
+  #content a:hover {
+    text-decoration: underline;
+  }
+  #content a[href*="/presentation/"] {
     display: inline-block;
     text-decoration: none;
     font-weight: 600;
@@ -96,21 +99,14 @@
     border-radius: 10px;
     margin-top: 0.5em;
     margin-right: 0.4em;
-  }
-  #content a[href*="/presentation/"] {
-    background: var(--ik-red);
-    color: white;
+    background: white;
+    color: var(--ik-red);
   }
   #content a[href*="/presentation/"]:hover {
-    background: var(--ik-red-dark);
+    background: #fbeceb;
   }
   #content a[href$=".pdf"] {
-    background: transparent;
-    color: var(--ik-red);
-    border: 2px solid var(--ik-red);
-  }
-  #content a[href$=".pdf"]:hover {
-    background: #fbeceb;
+    text-decoration: none;
   }
   #content .loading,
   #content .error {
