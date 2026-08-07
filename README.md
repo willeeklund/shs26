@@ -18,11 +18,11 @@ Varje workshop har en **textfil** som innehåller basen för materialet. Baserat
 
 | Textfil | Presentation | Stödmaterial |
 |---|---|---|
-| [Varför spelar vi ishockey?](workshops/why-we-play/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/why-we-play/presentation/) | [Lappar till rangordningsövning](workshops/why-we-play/print/index.html) |
-| [Skills-competition](workshops/skills-competition/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/skills-competition/presentation/) | [Poängkort att skriva ut](workshops/skills-competition/poangkort/poangkort.html) |
-| [Spelförståelse](workshops/spelforstaelse/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/spelforstaelse/presentation/) | [Uppdragskort (QR + frågor)](workshops/spelforstaelse/uppdragskort/uppdragskort.pdf) |
-| [Rita taktik](workshops/rita-taktik/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/rita-taktik/presentation/) | [Rinkmallar att skriva ut](workshops/rita-taktik/rinkmallar/rinkmallar.html) |
-| [Syftet med övningen](workshops/syftet-med-övningen/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/syftet-med-övningen/presentation/) | [Övningskort att skriva ut dubbelsidigt](workshops/syftet-med-övningen/ovningskort/ovningskort.html) |
-| [Vilken spelare vill du bli?](workshops/vilken-spelare-vill-du-bli/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/vilken-spelare-vill-du-bli/presentation/) | [Situationskort](vilken-spelare-vill-du-bli/situationskort/situationskort.html) |
-| [Fysträning](workshops/fys/index.md) | [Öppna →](https://willeeklund.github.io/shs26/workshops/fys/presentation/) | [Situationskort](workshops/fys/situationskort/situationskort.html) |
+| [Varför spelar vi ishockey?](workshops/why-we-play/index.md) | [Öppna →](workshops/why-we-play/presentation/) | [Lappar till rangordningsövning](workshops/why-we-play/print/index.html) |
+| [Skills-competition](workshops/skills-competition/index.md) | [Öppna →](workshops/skills-competition/presentation/) | [Poängkort att skriva ut](workshops/skills-competition/poangkort/poangkort.html) |
+| [Fysträning](workshops/fys/index.md) | [Öppna →](workshops/fys/presentation/) | [Situationskort](workshops/fys/situationskort/situationskort.html) |
+| [Spelförståelse](workshops/spelforstaelse/index.md) | [Öppna →](workshops/spelforstaelse/presentation/) | [Uppdragskort (QR + frågor)](workshops/spelforstaelse/uppdragskort/uppdragskort.pdf) |
+| [Rita taktik](workshops/rita-taktik/index.md) | [Öppna →](workshops/rita-taktik/presentation/) | [Rinkmallar att skriva ut](workshops/rita-taktik/rinkmallar/rinkmallar.html) |
+| [Syftet med övningen](workshops/syftet-med-övningen/index.md) | [Öppna →](workshops/syftet-med-övningen/presentation/) | [Övningskort att skriva ut dubbelsidigt](workshops/syftet-med-övningen/ovningskort/ovningskort.html) |
+| [Vilken spelare vill du bli?](workshops/vilken-spelare-vill-du-bli/index.md) | [Öppna →](workshops/vilken-spelare-vill-du-bli/presentation/) | [Situationskort](workshops/vilken-spelare-vill-du-bli/situationskort/situationskort.html) |
 
