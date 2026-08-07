@@ -14,6 +14,22 @@
       display: none;
     }
 
+    /* Fullskärmsvideo (YouTube-embed), t.ex. inledande motivationsklipp */
+    .slide.video-slide {
+      padding: 0;
+    }
+    .video-wrap {
+      position: absolute;
+      inset: 0;
+      background: #000;
+    }
+    .video-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
     /* Bildram för enskilda bilder (t.ex. fysisk utveckling i slutet) */
     .photo-frame {
       flex: 1;
@@ -121,7 +137,14 @@
       <p class="lead">Bli en hockeydetektiv 🕵️</p>
     </section>
 
-    <!-- 2: Uppdraget -->
+    <!-- 2: Video - varför vi tränar -->
+    <section class="slide video-slide">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/y_bYjLYXJo0" title="Varför tränar vi? En morfar tränar för att kunna lyfta sitt barnbarn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- 3: Uppdraget -->
     <section class="slide">
       <div class="eyebrow">Uppdraget</div>
       <h2>Ni är hockeydetektiver! 🕵️</h2>

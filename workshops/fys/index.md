@@ -14,6 +14,11 @@ Så här blir du bättre av att fysträna:
 
 Spelarna ska helst inte bara HÖRA det här av tränaren - de ska komma fram till det själva. Se detektivupplägget nedan.
 
+## Inledande video: varför tränar man? 🎥
+Direkt efter omslagsbilden visas [den här videon](https://www.youtube.com/watch?v=y_bYjLYXJo0) i helskärm, innan något annat sägs. En morfar tränar för att bli stark nog att lyfta upp sitt barnbarn så hen kan sätta stjärnan i julgranen.
+
+Poängen: när man vet vad sitt mål är, och ser kopplingen mellan träningen och att komma närmare målet, blir man motiverad. Samma tänk gäller oss - vi tränar utanför isen för att bli bättre på specifika saker på isen, inte träning för träningens skull.
+
 ## Hockeydetektiverna 🕵️
 Grundidén: barn ska inte undervisas, de ska upptäcka själva. Istället för att säga "balans är viktigt" ska spelarna komma fram till det på egen hand.
 
