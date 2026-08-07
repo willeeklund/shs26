@@ -3,7 +3,7 @@ En workshop om att skapa bra beteenden i laget.
 
 🎥 **Presentation:** [Öppna presentationen](https://willeeklund.github.io/shs26/workshops/vilken-spelare-vill-du-bli/presentation/)
 
-📋 **Stödmaterial:** [situationskort.html](situationskort/situationskort.html) (24 situationskort, skrivs ut och klipps isär)
+📋 **Stödmaterial:** [situationskort.html](situationskort/situationskort.html) (20 situationskort, skrivs ut och klipps isär)
 
 - Vilken spelare och lagkompis vill du vara om ett par år? Det avgörs av vanorna du bygger nu - inte av en enskild dag.
 - Hur vill jag bli uppfattad av mina lagkamrater och som hockeyspelare?
@@ -94,30 +94,26 @@ Poängen: dessa är alla saker man kan SE någon göra. Inte "vara snäll" eller
 ## Situationskort - dela ut till grupperna
 
 ### På isen 🏒
-- Din lagkompis missar ett öppet mål i en match. Vad gör du?
 - Ni ligger under i en match och det börjar kännas tungt i laget. Vad kan du säga eller göra?
-- En ny spelare är med på träningen för första gången och verkar osäker. Vad gör du?
 - Domaren blåser en straff mot dig som du tycker är helt fel. Hur reagerar du?
-- Du har inte fått spela så mycket i matchen som du hoppats på. Vad gör du - på bänken och efteråt?
 - Du har precis passat pucken till en lagkompis. Vad gör du direkt efteråt - bara titta på, eller något mer?
 - Motståndarna tar pucken från er. Vad gör du på en gång - även om det inte var du som tappade den?
+- Du är forward långt fram i planet när pucken plötsligt vänder och motståndarna anfaller. Vad gör du?
+- Du står still en bit från pucken och väntar på att någon ska passa till dig. Vad borde du göra istället?
+- Du får pucken och en lagkompis är öppen bredvid dig, men du väntar en extra sekund innan du bestämmer dig. Vad hinner hända under den sekunden?
 - Du gör ett misstag som leder till att motståndarna gör mål. Vad gör du direkt efteråt?
 - En lagkompis blir arg och skäller på en annan lagkompis efter ett misstag. Vad gör du?
 - Ni vinner stort och matchen är i praktiken redan avgjord. Hur väljer du att spela de sista minuterna?
-- Du blir hårt tacklad (helt inom reglerna) och det gör ont. Hur reagerar du?
 - Tränaren byter ut dig mitt i en period du kände dig riktigt bra. Vad gör du på bänken?
 - En motståndare retas eller är taskig mot dig. Hur reagerar du?
 - En lagkompis börjar klaga högt på en övning ni kör. Vad gör du - och vad tror du händer med resten av laget om alla börjar klaga?
 - **RITA:** Motståndarna har precis tagit pucken vid mittlinjen och är på väg mot ert mål. Titta på bilden - rita en pil för var DU skulle åka för att hjälpa laget i försvar.
 - **RITA:** En lagkompis har pucken vid kanten, men ingen är riktigt öppen för passning. Rita en pil för var DU skulle åka för att bli spelbar.
 - **RITA:** En lagkompis pressar puckbäraren i er egen zon, och en motståndare blir öppen framför mål. Rita en pil för var DU skulle åka för att täcka.
-- **RITA:** Laget har pucken djupt i anfallszonen, men DU står för högt för att stötta. Rita en pil för var DU borde stå istället.
+- **RITA:** Laget har pucken djupt i anfallszonen, men DU står för långt bort för att stötta. Rita en pil för var DU borde stå istället.
 - **RITA:** Din medback pinchar längs kanten i anfallszon. Rita en pil för var DU skulle täcka mitten om det blir kontring.
 
 ### Utanför isen 🏠
-- I omklädningsrummet har någon glömt en del av sin utrustning hemma. Vad gör laget?
-- Ni åker buss eller bil till en bortamatch och en spelare sitter ensam. Vad gör du?
-- Du ser att en lagkompis blir retad av någon annan i skolan (inte i laget). Vad gör du?
 - En förälder ropar väldigt högt från läktaren och det känns jobbigt för spelaren det gäller. Hur pratar ni om det i laget?
 - Du är inte alls sugen på att göra styrke- eller konditionsövningar (off-ice) en viss dag. Hur märks det på dig - och hur skulle du vilja att det märktes istället?
 - Ni kör off-ice och övningen känns tråkig eller för lätt. Hur visar du att du ändå är med fullt ut?

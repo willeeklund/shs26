@@ -7,17 +7,16 @@ om du andrar nagon rit-scen, sa bilderna ar uppdaterade.
 
 situations = [
     # --- På isen ---
-    {"category": "isen", "text": "Din lagkompis missar ett öppet mål i en match. Vad gör du?"},
     {"category": "isen", "text": "Ni ligger under i en match och det börjar kännas tungt i laget. Vad kan du säga eller göra?"},
-    {"category": "isen", "text": "En ny spelare är med på träningen för första gången och verkar osäker. Vad gör du?"},
     {"category": "isen", "text": "Domaren blåser en straff mot dig som du tycker är helt fel. Hur reagerar du?"},
-    {"category": "isen", "text": "Du har inte fått spela så mycket i matchen som du hoppats på. Vad gör du?"},
     {"category": "isen", "text": "Du har precis passat pucken till en lagkompis. Vad gör du direkt efteråt?"},
     {"category": "isen", "text": "Motståndarna tar pucken från er. Vad gör du på en gång?"},
+    {"category": "isen", "text": "Du är forward långt fram i planet när pucken plötsligt vänder och motståndarna anfaller. Vad gör du?"},
+    {"category": "isen", "text": "Du står still en bit från pucken och väntar på att någon ska passa till dig. Vad borde du göra istället?"},
+    {"category": "isen", "text": "Du får pucken och en lagkompis är öppen bredvid dig, men du väntar en extra sekund innan du bestämmer dig. Vad hinner hända under den sekunden?"},
     {"category": "isen", "text": "Du gör ett misstag som leder till att motståndarna gör mål. Vad gör du direkt efteråt?"},
     {"category": "isen", "text": "En lagkompis blir arg och skäller på en annan lagkompis efter ett misstag. Vad gör du?"},
     {"category": "isen", "text": "Ni vinner stort och matchen är i praktiken redan avgjord. Hur väljer du att spela sista minuterna?"},
-    {"category": "isen", "text": "Du blir hårt tacklad (helt inom reglerna) och det gör ont. Hur reagerar du?"},
     {"category": "isen", "text": "Du har varit ute på isen genom flera anfall och börjar bli trött. Just då får du pucken - vad gör du?"},
     {"category": "isen", "text": "En motståndare retas eller är taskig mot dig. Hur reagerar du?"},
     # --- Rita-situationer (på isen) ---
@@ -44,24 +43,21 @@ situations = [
     },
     {
         "category": "isen",
-        "text": "Laget har pucken djupt i anfallszonen, men DU står för högt för att stötta.",
+        "text": "Laget har pucken djupt i anfallszonen, men DU står för långt bort för att stötta.",
         "draw": True,
         "draw_instruction": "✏️ Rita: vart åker DU för att stötta?",
         "image": "rink-stotta-anfall.png",
     },
     {
         "category": "isen",
-        "text": "Din medback pinchar längs kanten i anfallszon - om motståndarna får pucken kan det bli kontring.",
+        "text": "Din medspelare har pucken i anfallszon - om motståndarna får pucken kan det bli kontring.",
         "draw": True,
         "draw_instruction": "✏️ Rita: vart åker DU för att täcka mitten?",
         "image": "rink-tacka-pinch.png",
     },
     # --- Utanför isen ---
-    {"category": "utanfor", "text": "I omklädningsrummet har någon glömt en del av sin utrustning hemma. Vad gör laget?"},
-    {"category": "utanfor", "text": "Ni åker buss eller bil till en bortamatch och en spelare sitter ensam. Vad gör du?"},
-    {"category": "utanfor", "text": "Du ser att en lagkompis blir retad av någon annan i skolan. Vad gör du?"},
     {"category": "utanfor", "text": "En förälder ropar väldigt högt från läktaren och det känns jobbigt för spelaren det gäller. Hur pratar ni om det i laget?"},
-    {"category": "utanfor", "text": "Du är inte alls sugen på att göra styrke- eller konditionsövningar (off-ice) en viss dag. Hur märks det på dig?"},
+    {"category": "utanfor", "text": "Du är inte alls sugen på att göra styrke- eller konditionsövningar (off-ice) en viss dag. Hur agerar du för att inte sprida dålig stämning?"},
     {"category": "utanfor", "text": "Ni kör off-ice och övningen känns tråkig eller för lätt. Hur visar du att du ändå är med fullt ut?"},
 ]
 

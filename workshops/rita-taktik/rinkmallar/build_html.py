@@ -7,7 +7,7 @@ nagon rit-scen, sa bilderna ar uppdaterade, kor sedan om detta skript.
 
 STATIONS = [
     {
-        "title": "Del 1: Bästa passningen",
+        "title": "Bästa passningen",
         "instruction": "✏️ Rita en pil dit du skulle passa pucken",
         "scenarios": [
             ("Lätt", "passning-latt.png"),
@@ -16,7 +16,7 @@ STATIONS = [
         ],
     },
     {
-        "title": "Del 2: Anfall",
+        "title": "Anfall",
         "instruction": "✏️ Rita var alla anfallare borde åka",
         "scenarios": [
             ("Lätt", "anfall-forsvar-latt.png"),
@@ -25,7 +25,7 @@ STATIONS = [
         ],
     },
     {
-        "title": "Del 3: Försvar",
+        "title": "Försvar",
         "instruction": "✏️ Rita var försvararna borde stå",
         # Samma bilder som del 2 - nu ritar gruppen försvararnas positioner istället
         "scenarios": [
@@ -39,11 +39,11 @@ STATIONS = [
 LEGEND = "⭕ = Försvarare&nbsp;&nbsp;&nbsp;✖️ = Anfallare"
 
 
-def render_card(station, difficulty, image):
+def render_card(number, station, difficulty, image):
     return f"""
     <div class="card">
       <div class="card-top">
-        <span class="station-label">{station['title']}</span>
+        <span class="station-label">#{number} {station['title']}</span>
         <span class="difficulty-label">{difficulty}</span>
       </div>
       <div class="legend">{LEGEND}</div>
@@ -62,9 +62,11 @@ def render_page(cards):
 
 
 cards = []
+number = 1
 for station in STATIONS:
     for difficulty, image in station["scenarios"]:
-        cards.append(render_card(station, difficulty, image))
+        cards.append(render_card(number, station, difficulty, image))
+        number += 1
 
 PER_PAGE = 3
 pages_html = []

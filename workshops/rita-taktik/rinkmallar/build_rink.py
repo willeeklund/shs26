@@ -136,8 +136,8 @@ SCENES = [
     ),
     dict(
         filename="passning-medel.png",
-        # Medel: två försvarare bevakar vinklarna, en lagkompis kräver bättre passningsval.
-        # Den tredje försvararen är långt bort.
+        # Medel: en försvarare tätt i passningsvägen mot en lagkompis (blockerad),
+        # den andra lagkompisen är helt öppen. Den tredje försvararen är långt bort.
         attackers=[
             {"pos": (420, 460), "label": "DU"},
             {"pos": (680, 230)},
@@ -145,7 +145,7 @@ SCENES = [
         ],
         defenders=[
             {"pos": (600, 320)},
-            {"pos": (650, 500)},
+            {"pos": (560, 610)},
             {"pos": (1050, 430)},  # långt bort, inte inblandad
         ],
         puck=(440, 450),
